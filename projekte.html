@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projekte — SPS-IBR</title>
+  <meta name="description" content="SPS-IBR Projekte — Architektur, Masterplanung, Industrie und Kulturbau weltweit.">
+  <meta property="og:title" content="Projekte — SPS-IBR">
+  <meta property="og:description" content="SPS-IBR Projekte — Architektur, Masterplanung, Industrie und Kulturbau weltweit.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://www.sps-ibr.com/projekte.html">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link" data-de="Zum Inhalt springen" data-en="Skip to content">Zum Inhalt springen</a>
+
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <div class="header-logo">
+      <a href="index.html" aria-label="SPS-IBR — Zur Startseite">
+        <img src="media/logo-sps-ibr.jpg" alt="SPS-IBR Logo" width="140" height="36">
+      </a>
+    </div>
+    <nav class="main-nav" aria-label="Hauptnavigation">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="buero.html" class="main-nav__link" data-de="Büro" data-en="Office">Büro</a></li>
+        <li class="main-nav__item"><span class="pipe" aria-hidden="true">|</span></li>
+        <li class="main-nav__item"><a href="index.html#aktuell" class="main-nav__link" data-de="Aktuell" data-en="News">Aktuell</a></li>
+        <li class="main-nav__item"><span class="pipe" aria-hidden="true">|</span></li>
+        <li class="main-nav__item"><a href="nachhaltigkeit.html" class="main-nav__link" data-de="Nachhaltigkeit" data-en="Sustainability">Nachhaltigkeit</a></li>
+        <li class="main-nav__item"><span class="pipe" aria-hidden="true">|</span></li>
+        <li class="main-nav__item"><a href="projekte.html" class="main-nav__link" data-de="Projekte" data-en="Projects">Projekte</a></li>
+        <li class="main-nav__item"><span class="pipe" aria-hidden="true">|</span></li>
+        <li class="main-nav__item"><a href="index.html#kontakt" class="main-nav__link" data-de="Kontakt" data-en="Contact">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div class="lang-toggle desktop-only">
+      <button class="lang-toggle__btn" data-lang="de" aria-pressed="true">DE</button>
+      <span class="lang-toggle__sep">/</span>
+      <button class="lang-toggle__btn" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <button class="hamburger" aria-expanded="false" aria-controls="mobile-nav" aria-label="Menü öffnen">
+      <span class="hamburger__line"></span>
+      <span class="hamburger__line"></span>
+      <span class="hamburger__line"></span>
+    </button>
+  </header>
+
+  <div class="mobile-nav" id="mobile-nav" role="dialog" aria-modal="true" aria-label="Navigation">
+    <a href="buero.html" class="mobile-nav__link" data-de="Büro" data-en="Office">Büro</a>
+    <a href="index.html#aktuell" class="mobile-nav__link" data-de="Aktuell" data-en="News">Aktuell</a>
+    <a href="nachhaltigkeit.html" class="mobile-nav__link" data-de="Nachhaltigkeit" data-en="Sustainability">Nachhaltigkeit</a>
+    <a href="projekte.html" class="mobile-nav__link" data-de="Projekte" data-en="Projects">Projekte</a>
+    <a href="index.html#kontakt" class="mobile-nav__link" data-de="Kontakt" data-en="Contact">Kontakt</a>
+    <div class="lang-toggle">
+      <button class="lang-toggle__btn" data-lang="de" aria-pressed="true">DE</button>
+      <span class="lang-toggle__sep">/</span>
+      <button class="lang-toggle__btn" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+
+  <main id="main-content" style="padding-top: var(--header-h);">
+
+    <!-- STICKY FILTER + SEARCH -->
+    <div class="filter-bar-sticky" id="filter-bar-sticky">
+      <div class="filter-bar">
+        <button class="filter-btn" data-filter="alle" aria-pressed="true" data-de="Alle" data-en="All">Alle</button>
+        <button class="filter-btn" data-filter="masterplanung" aria-pressed="false" data-de="Masterplanung" data-en="Masterplanning">Masterplanung</button>
+        <button class="filter-btn" data-filter="architektur" aria-pressed="false" data-de="Architektur" data-en="Architecture">Architektur</button>
+        <button class="filter-btn" data-filter="kultur & veranstaltung" aria-pressed="false" data-de="Kultur &amp; Veranstaltung" data-en="Culture &amp; Events">Kultur &amp; Veranstaltung</button>
+        <button class="filter-btn" data-filter="hotels, wohnen & gesundheit" aria-pressed="false" data-de="Hotels, Wohnen &amp; Gesundheit" data-en="Hotels, Living &amp; Health">Hotels, Wohnen &amp; Gesundheit</button>
+        <button class="filter-btn" data-filter="büro & industrie" aria-pressed="false" data-de="Büro &amp; Industrie" data-en="Office &amp; Industry">Büro &amp; Industrie</button>
+        <button class="filter-btn" data-filter="digitale planung" aria-pressed="false" data-de="Digitale Planung" data-en="Digital Planning">Digitale Planung</button>
+        <input type="text" class="search-input" data-placeholder-de="Projekt suchen..." data-placeholder-en="Search project..." placeholder="Projekt suchen..." aria-label="Projekte durchsuchen">
+      </div>
+    </div>
+
+    <!-- PROJECT GRID — 5 columns, new projects first -->
+    <section class="section" style="padding-top: var(--space-m);">
+      <div class="grid-5">
+        <!-- NEW: Straubing -->
+        <a href="Projekte/projekt-biocampus-straubing.html" class="project-card" data-category="Büro & Industrie" data-name="biocampus straubing">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/00 Straubing/cover.jpg" alt="BioCampus MultiPilot — Straubing" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/biocampus-straubing.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Büro &amp; Industrie" data-en="Office &amp; Industry">Büro &amp; Industrie</span>
+            <h3 class="project-card__title">BioCampus MultiPilot — Straubing</h3>
+            <p class="project-card__meta">Hafen Straubing-Sand, Bayern</p>
+          </div>
+        </a>
+        <!-- NEW: Mainburg -->
+        <a href="Projekte/projekt-abensberger-mainburg.html" class="project-card" data-category="Architektur" data-name="abensberger mainburg">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/01 Mainburg/Cover.png" alt="Abensberger Straße — Mainburg" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/abensberger-mainburg.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Architektur" data-en="Architecture">Architektur</span>
+            <h3 class="project-card__title">Abensberger Straße — Mainburg</h3>
+            <p class="project-card__meta">Mainburg, Bayern</p>
+          </div>
+        </a>
+        <!-- NEW: Laser Scan -->
+        <a href="Projekte/projekt-laser-scan-bim.html" class="project-card" data-category="Digitale Planung" data-name="laser scan bim modellierung">
+          <div class="project-card__img-wrap">
+    <img src="media/Laser Scan/Laser Scan Cover.jpg" alt="3D-Laserscanning &amp; BIM" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/laser-scan-bim.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Digitale Planung" data-en="Digital Planning">Digitale Planung</span>
+            <h3 class="project-card__title">3D-Laserscanning &amp; BIM-Modellierung</h3>
+            <p class="project-card__meta">Bayern, Deutschland</p>
+          </div>
+        </a>
+        <!-- Prioritäts-Reihenfolge: direkt nach 3D-Laserscan -->
+        <a href="Projekte/projekt-waha-oil.html" class="project-card" data-category="Büro & Industrie" data-name="waha oil company firmenzentrale">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/waha-oil/cover.jpg" alt="Waha Oil Company Firmenzentrale" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/waha-oil.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Büro &amp; Industrie" data-en="Office &amp; Industry">Büro &amp; Industrie</span>
+            <h3 class="project-card__title">Waha Oil Company Firmenzentrale</h3>
+            <p class="project-card__meta">Tripolis, LY</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-taipei-performing-arts.html" class="project-card" data-category="Kultur & Veranstaltung" data-name="taipeh performing arts center">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/taipei-performing-arts/cover.jpg" alt="Taipeh Performing Arts Center" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/studentisches-wohnen-weiden.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Kultur &amp; Veranstaltung" data-en="Culture &amp; Events">Kultur &amp; Veranstaltung</span>
+            <h3 class="project-card__title">Taipeh Performing Arts Center</h3>
+            <p class="project-card__meta">Taipei, TW</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-siegle-epple.html" class="project-card" data-category="Büro & Industrie" data-name="firmenzentrale siegle + epple">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/siegle-epple/cover.jpg" alt="Firmenzentrale Siegle + Epple" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/siegle-epple.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Büro &amp; Industrie" data-en="Office &amp; Industry">Büro &amp; Industrie</span>
+            <h3 class="project-card__title">Firmenzentrale Siegle + Epple</h3>
+            <p class="project-card__meta">Stuttgart, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-hanns-seidel-buergerzentrum.html" class="project-card" data-category="Kultur & Veranstaltung" data-name="bürgerzentrum hanns-seidel-platz">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/hanns-seidel-buergerzentrum/cover.jpg" alt="Bürgerzentrum Hanns-Seidel-Platz" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/hanns-seidel-buergerzentrum.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Kultur &amp; Veranstaltung" data-en="Culture &amp; Events">Kultur &amp; Veranstaltung</span>
+            <h3 class="project-card__title">Bürgerzentrum Hanns-Seidel-Platz</h3>
+            <p class="project-card__meta">München, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-aalen-ihk-neubau.html" class="project-card" data-category="Kultur & Veranstaltung" data-name="industrie- und handelskammer aalen">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/aalen-ihk-neubau/cover.jpg" alt="Industrie- und Handelskammer Aalen" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/aalen-ihk-neubau.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Kultur &amp; Veranstaltung" data-en="Culture &amp; Events">Kultur &amp; Veranstaltung</span>
+            <h3 class="project-card__title">Industrie- und Handelskammer Aalen</h3>
+            <p class="project-card__meta">Aalen, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-african-heart.html" class="project-card" data-category="Hotels, Wohnen & Gesundheit" data-name="african heart">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/african-heart/cover.jpg" alt="African Heart" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/african-heart.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Hotels, Wohnen &amp; Gesundheit" data-en="Hotels, Living &amp; Health">Hotels, Wohnen &amp; Gesundheit</span>
+            <h3 class="project-card__title">African Heart</h3>
+            <p class="project-card__meta">Kigali, RW</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-bahnhofsumgebung-prien.html" class="project-card" data-category="Masterplanung" data-name="bahnhofsumgebung prien">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/bahnhofsumgebung-prien/cover.jpg" alt="Bahnhofsumgebung Prien" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/bahnhofsumgebung-prien.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Masterplanung" data-en="Masterplanning">Masterplanung</span>
+            <h3 class="project-card__title">Bahnhofsumgebung Prien</h3>
+            <p class="project-card__meta">Prien, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-bay-resort-hotel.html" class="project-card" data-category="Hotels, Wohnen & Gesundheit" data-name="paradise bay resort hotel">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/bay-resort-hotel/cover.jpg" alt="Paradise Bay Resort Hotel" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/bay-resort-hotel.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Hotels, Wohnen &amp; Gesundheit" data-en="Hotels, Living &amp; Health">Hotels, Wohnen &amp; Gesundheit</span>
+            <h3 class="project-card__title">Paradise Bay Resort Hotel</h3>
+            <p class="project-card__meta">Koh Phangan, TH</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-buero-brienner.html" class="project-card" data-category="Hotels, Wohnen & Gesundheit" data-name="büro spacial solutions">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/buero-brienner/cover.jpg" alt="Büro Spacial Solutions" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/buero-brienner.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Hotels, Wohnen &amp; Gesundheit" data-en="Hotels, Living &amp; Health">Hotels, Wohnen &amp; Gesundheit</span>
+            <h3 class="project-card__title">Büro Spacial Solutions</h3>
+            <p class="project-card__meta">München, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-bueyuekada.html" class="project-card" data-category="Hotels, Wohnen & Gesundheit" data-name="resort hotel büyükada">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/bueyuekada/cover.jpg" alt="Resort Hotel Büyükada" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/bueyuekada.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Hotels, Wohnen &amp; Gesundheit" data-en="Hotels, Living &amp; Health">Hotels, Wohnen &amp; Gesundheit</span>
+            <h3 class="project-card__title">Resort Hotel Büyükada</h3>
+            <p class="project-card__meta">Istanbul, TR</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-checkmk.html" class="project-card" data-category="Büro & Industrie" data-name="moderne arbeitswelten im altbau: maßgeschneiderter ausbau für checkmk in münchen">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/checkmk/cover.jpg" alt="Moderne Arbeitswelten im Altbau: Maßgeschneiderter Ausbau für Checkmk in München" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/checkmk.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Büro &amp; Industrie" data-en="Office &amp; Industry">Büro &amp; Industrie</span>
+            <h3 class="project-card__title">Moderne Arbeitswelten im Altbau: Maßgeschneiderter Ausbau für Checkmk in München</h3>
+            <p class="project-card__meta">München, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-convention-hotel-kigali.html" class="project-card" data-category="Hotels, Wohnen & Gesundheit" data-name="kigali convention hotel">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/convention-hotel-kigali/cover.jpg" alt="Kigali Convention Hotel" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/convention-hotel-kigali.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Hotels, Wohnen &amp; Gesundheit" data-en="Hotels, Living &amp; Health">Hotels, Wohnen &amp; Gesundheit</span>
+            <h3 class="project-card__title">Kigali Convention Hotel</h3>
+            <p class="project-card__meta">Kigali, RW</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-corrensstrasse.html" class="project-card" data-category="Masterplanung" data-name="corrensstraße 41-45">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/corrensstrasse/cover.jpg" alt="Corrensstraße 41-45" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/corrensstrasse.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Masterplanung" data-en="Masterplanning">Masterplanung</span>
+            <h3 class="project-card__title">Corrensstraße 41-45</h3>
+            <p class="project-card__meta">Tübingen, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-dachaufstockung-reutlingen.html" class="project-card" data-category="Hotels, Wohnen & Gesundheit" data-name="dachaufstockung reutlingen">
+          <div class="project-card__img-wrap">
+    <img src="media/hero-background.png" alt="Dachaufstockung Reutlingen" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/dachaufstockung-reutlingen.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Hotels, Wohnen &amp; Gesundheit" data-en="Hotels, Living &amp; Health">Hotels, Wohnen &amp; Gesundheit</span>
+            <h3 class="project-card__title">Dachaufstockung Reutlingen</h3>
+            <p class="project-card__meta">Reutlingen, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-daxenbuehel-wessling.html" class="project-card" data-category="Hotels, Wohnen & Gesundheit" data-name="häuser am daxenbühel, weßling">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/daxenbuehel-wessling/cover.jpg" alt="Häuser am Daxenbühel, Weßling" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/daxenbuehel-wessling.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Hotels, Wohnen &amp; Gesundheit" data-en="Hotels, Living &amp; Health">Hotels, Wohnen &amp; Gesundheit</span>
+            <h3 class="project-card__title">Häuser am Daxenbühel, Weßling</h3>
+            <p class="project-card__meta">Weßling, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-doebele-konstanz.html" class="project-card" data-category="Masterplanung" data-name="döbele konstanz">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/doebele-konstanz/cover.jpg" alt="Döbele Konstanz" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/doebele-konstanz.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Masterplanung" data-en="Masterplanning">Masterplanung</span>
+            <h3 class="project-card__title">Döbele Konstanz</h3>
+            <p class="project-card__meta">Konstanz, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-ernst-young-stuttgart.html" class="project-card" data-category="Büro & Industrie" data-name="flughafenbüro für ernst & young">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/ernst-young-stuttgart/cover.jpg" alt="Flughafenbüro für Ernst & Young" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/ernst-young-stuttgart.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Büro &amp; Industrie" data-en="Office &amp; Industry">Büro &amp; Industrie</span>
+            <h3 class="project-card__title">Flughafenbüro für Ernst & Young</h3>
+            <p class="project-card__meta">Stuttgart, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-ewz-stihl-waiblingen.html" class="project-card" data-category="Masterplanung" data-name="stihl entwicklungszentrum">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/ewz-stihl-waiblingen/cover.jpg" alt="STIHL Entwicklungszentrum" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/ewz-stihl-waiblingen.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Masterplanung" data-en="Masterplanning">Masterplanung</span>
+            <h3 class="project-card__title">STIHL Entwicklungszentrum</h3>
+            <p class="project-card__meta">Waiblingen, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-garching-campus.html" class="project-card" data-category="Masterplanung" data-name="garching campus">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/garching-campus/cover.jpg" alt="Garching Campus" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/garching-campus.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Masterplanung" data-en="Masterplanning">Masterplanung</span>
+            <h3 class="project-card__title">Garching Campus</h3>
+            <p class="project-card__meta">Garching, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-gebaeude-t-neckarbogen.html" class="project-card" data-category="Hotels, Wohnen & Gesundheit" data-name="gebäude t am neckarbogen">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/gebaeude-t-neckarbogen/cover.jpg" alt="Gebäude T am Neckarbogen" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/gebaeude-t-neckarbogen.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Hotels, Wohnen &amp; Gesundheit" data-en="Hotels, Living &amp; Health">Hotels, Wohnen &amp; Gesundheit</span>
+            <h3 class="project-card__title">Gebäude T am Neckarbogen</h3>
+            <p class="project-card__meta">Tübingen, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-hanns-seidel-platz.html" class="project-card" data-category="Masterplanung" data-name="hanns-seidel-platz">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/hanns-seidel-platz/cover.jpg" alt="Hanns-Seidel-Platz" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/hanns-seidel-platz.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Masterplanung" data-en="Masterplanning">Masterplanung</span>
+            <h3 class="project-card__title">Hanns-Seidel-Platz</h3>
+            <p class="project-card__meta">München-Neuperlach, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-haus-wessling.html" class="project-card" data-category="Hotels, Wohnen & Gesundheit" data-name="haus weßling">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/haus-wessling/cover.jpg" alt="Haus Weßling" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/haus-wessling.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Hotels, Wohnen &amp; Gesundheit" data-en="Hotels, Living &amp; Health">Hotels, Wohnen &amp; Gesundheit</span>
+            <h3 class="project-card__title">Haus Weßling</h3>
+            <p class="project-card__meta">Weßling, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-hotel-arnis.html" class="project-card" data-category="Hotels, Wohnen & Gesundheit" data-name="wohlfühl-hotel in arnis">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/hotel-arnis/cover.jpg" alt="Wohlfühl-Hotel in Arnis" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/hotel-arnis.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Hotels, Wohnen &amp; Gesundheit" data-en="Hotels, Living &amp; Health">Hotels, Wohnen &amp; Gesundheit</span>
+            <h3 class="project-card__title">Wohlfühl-Hotel in Arnis</h3>
+            <p class="project-card__meta">Arnis, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-icc-abuja.html" class="project-card" data-category="Kultur & Veranstaltung" data-name="international convention center abuja, nigeria">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/icc-abuja/cover.jpg" alt="International Convention Center Abuja, Nigeria" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/icc-abuja.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Kultur &amp; Veranstaltung" data-en="Culture &amp; Events">Kultur &amp; Veranstaltung</span>
+            <h3 class="project-card__title">International Convention Center Abuja, Nigeria</h3>
+            <p class="project-card__meta">Abuja, NG</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-isarphilharmonie.html" class="project-card" data-category="Kultur & Veranstaltung" data-name="philharmonie an der isar">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/isarphilharmonie/cover.jpg" alt="Philharmonie an der Isar" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/isarphilharmonie.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Kultur &amp; Veranstaltung" data-en="Culture &amp; Events">Kultur &amp; Veranstaltung</span>
+            <h3 class="project-card__title">Philharmonie an der Isar</h3>
+            <p class="project-card__meta">München, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-it-office-park-kigali.html" class="project-card" data-category="Kultur & Veranstaltung" data-name="it - office park">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/it-office-park-kigali/cover.jpg" alt="IT - Office Park" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/it-office-park-kigali.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Kultur &amp; Veranstaltung" data-en="Culture &amp; Events">Kultur &amp; Veranstaltung</span>
+            <h3 class="project-card__title">IT - Office Park</h3>
+            <p class="project-card__meta">Kigali, RW</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-kigali-convention-complex.html" class="project-card" data-category="Masterplanung" data-name="kigali convention complex">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/kigali-convention-complex/cover.jpg" alt="Kigali Convention Complex" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/kigali-convention-complex.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Masterplanung" data-en="Masterplanning">Masterplanung</span>
+            <h3 class="project-card__title">Kigali Convention Complex</h3>
+            <p class="project-card__meta">Kigali, RW</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-kigali-retail-center.html" class="project-card" data-category="Hotels, Wohnen & Gesundheit" data-name="retail center">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/kigali-retail-center/cover.jpg" alt="Retail Center" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/kigali-retail-center.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Hotels, Wohnen &amp; Gesundheit" data-en="Hotels, Living &amp; Health">Hotels, Wohnen &amp; Gesundheit</span>
+            <h3 class="project-card__title">Retail Center</h3>
+            <p class="project-card__meta">Kigali, RW</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-lake-kivu-hotel.html" class="project-card" data-category="Hotels, Wohnen & Gesundheit" data-name="resort und business hotel am lake kivu">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/lake-kivu-hotel/cover.jpg" alt="Resort und Business Hotel am Lake Kivu" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/lake-kivu-hotel.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Hotels, Wohnen &amp; Gesundheit" data-en="Hotels, Living &amp; Health">Hotels, Wohnen &amp; Gesundheit</span>
+            <h3 class="project-card__title">Resort und Business Hotel am Lake Kivu</h3>
+            <p class="project-card__meta">Kibuye, RW</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-landshut-west.html" class="project-card" data-category="Masterplanung" data-name="landshut west">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/landshut-west/cover.jpg" alt="Landshut West" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/landshut-west.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Masterplanung" data-en="Masterplanning">Masterplanung</span>
+            <h3 class="project-card__title">Landshut West</h3>
+            <p class="project-card__meta">Landshut, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-leutschenbach-mitte.html" class="project-card" data-category="Hotels, Wohnen & Gesundheit" data-name="wohnen in leutschenbach-mitte">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/leutschenbach-mitte/cover.jpg" alt="Wohnen in Leutschenbach-Mitte" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/leutschenbach-mitte.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Hotels, Wohnen &amp; Gesundheit" data-en="Hotels, Living &amp; Health">Hotels, Wohnen &amp; Gesundheit</span>
+            <h3 class="project-card__title">Wohnen in Leutschenbach-Mitte</h3>
+            <p class="project-card__meta">Zürich, CH</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-lustnau-sued.html" class="project-card" data-category="Masterplanung" data-name="lustnau süd">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/lustnau-sued/cover.jpg" alt="Lustnau Süd" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/lustnau-sued.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Masterplanung" data-en="Masterplanning">Masterplanung</span>
+            <h3 class="project-card__title">Lustnau Süd</h3>
+            <p class="project-card__meta">Tübingen, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-marstall-muenchen.html" class="project-card" data-category="Kultur & Veranstaltung" data-name="kulturprojekt marstall">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/marstall-muenchen/cover.jpg" alt="Kulturprojekt Marstall" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/marstall-muenchen.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Kultur &amp; Veranstaltung" data-en="Culture &amp; Events">Kultur &amp; Veranstaltung</span>
+            <h3 class="project-card__title">Kulturprojekt Marstall</h3>
+            <p class="project-card__meta">München, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-masterplan-voith-2030.html" class="project-card" data-category="Masterplanung" data-name="masterplan voith 2030">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/masterplan-voith-2030/cover.png" alt="Masterplan Voith 2030" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/masterplan-voith-2030.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Masterplanung" data-en="Masterplanning">Masterplanung</span>
+            <h3 class="project-card__title">Masterplan Voith 2030</h3>
+            <p class="project-card__meta">Heidenheim, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-muenchner-stadtentwaesserung.html" class="project-card" data-category="Hotels, Wohnen & Gesundheit" data-name="betriebsstation der münchner stadtentwässerung">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/muenchner-stadtentwaesserung/cover.jpg" alt="Betriebsstation der Münchner Stadtentwässerung" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/muenchner-stadtentwaesserung.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Hotels, Wohnen &amp; Gesundheit" data-en="Hotels, Living &amp; Health">Hotels, Wohnen &amp; Gesundheit</span>
+            <h3 class="project-card__title">Betriebsstation der Münchner Stadtentwässerung</h3>
+            <p class="project-card__meta">München, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-musfort-hotel.html" class="project-card" data-category="Hotels, Wohnen & Gesundheit" data-name="musfort hotel">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/musfort-hotel/cover.jpg" alt="Musfort Hotel" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/musfort-hotel.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Hotels, Wohnen &amp; Gesundheit" data-en="Hotels, Living &amp; Health">Hotels, Wohnen &amp; Gesundheit</span>
+            <h3 class="project-card__title">Musfort Hotel</h3>
+            <p class="project-card__meta">Musfort, AJ</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-nashik.html" class="project-card" data-category="Masterplanung" data-name="nashik">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/nashik/cover.jpg" alt="Nashik" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/nashik.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Masterplanung" data-en="Masterplanning">Masterplanung</span>
+            <h3 class="project-card__title">Nashik</h3>
+            <p class="project-card__meta">Nashik, IN</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-neckarbogen-tuebingen.html" class="project-card" data-category="Hotels, Wohnen & Gesundheit" data-name="neckarbogen">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/neckarbogen-tuebingen/cover.jpg" alt="Neckarbogen" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/neckarbogen-tuebingen.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Hotels, Wohnen &amp; Gesundheit" data-en="Hotels, Living &amp; Health">Hotels, Wohnen &amp; Gesundheit</span>
+            <h3 class="project-card__title">Neckarbogen</h3>
+            <p class="project-card__meta">Tübingen, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-nuernberg-grossreuth.html" class="project-card" data-category="Masterplanung" data-name="züricher straße">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/nuernberg-grossreuth/cover.jpg" alt="Züricher Straße" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/nuernberg-grossreuth.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Masterplanung" data-en="Masterplanning">Masterplanung</span>
+            <h3 class="project-card__title">Züricher Straße</h3>
+            <p class="project-card__meta">Nürnberg, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-oertelplatz.html" class="project-card" data-category="Masterplanung" data-name="oertelplatz">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/oertelplatz/cover.jpg" alt="Oertelplatz" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/oertelplatz.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Masterplanung" data-en="Masterplanning">Masterplanung</span>
+            <h3 class="project-card__title">Oertelplatz</h3>
+            <p class="project-card__meta">München-Allach, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-orschel-hagen-pilot.html" class="project-card" data-category="Hotels, Wohnen & Gesundheit" data-name="nachverdichtung von orschel-hagen pilot-projekt">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/orschel-hagen-pilot/cover.jpg" alt="Nachverdichtung von Orschel-Hagen Pilot-Projekt" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/orschel-hagen-pilot.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Hotels, Wohnen &amp; Gesundheit" data-en="Hotels, Living &amp; Health">Hotels, Wohnen &amp; Gesundheit</span>
+            <h3 class="project-card__title">Nachverdichtung von Orschel-Hagen Pilot-Projekt</h3>
+            <p class="project-card__meta">Reutlingen, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-orschel-hagen-reutlingen.html" class="project-card" data-category="Hotels, Wohnen & Gesundheit" data-name="orschel-hagen nachverdichtung">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/orschel-hagen-reutlingen/cover.jpg" alt="Orschel-Hagen Nachverdichtung" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/orschel-hagen-reutlingen.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Hotels, Wohnen &amp; Gesundheit" data-en="Hotels, Living &amp; Health">Hotels, Wohnen &amp; Gesundheit</span>
+            <h3 class="project-card__title">Orschel-Hagen Nachverdichtung</h3>
+            <p class="project-card__meta">Reutlingen, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-prinz-eugen-kaserne.html" class="project-card" data-category="Masterplanung" data-name="prinz eugen kaserne">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/prinz-eugen-kaserne/cover.jpg" alt="Prinz Eugen Kaserne" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/prinz-eugen-kaserne.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Masterplanung" data-en="Masterplanning">Masterplanung</span>
+            <h3 class="project-card__title">Prinz Eugen Kaserne</h3>
+            <p class="project-card__meta">München, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-residential-park-kigali.html" class="project-card" data-category="Masterplanung" data-name="residential park">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/residential-park-kigali/cover.jpg" alt="Residential Park" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/residential-park-kigali.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Masterplanung" data-en="Masterplanning">Masterplanung</span>
+            <h3 class="project-card__title">Residential Park</h3>
+            <p class="project-card__meta">Kigali, RW</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-reutlingen-ideenwettbewerb.html" class="project-card" data-category="Masterplanung" data-name="stadt reutlingen ideenwettbewerb">
+          <div class="project-card__img-wrap">
+    <img src="media/hero-background.png" alt="Stadt Reutlingen Ideenwettbewerb" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/reutlingen-ideenwettbewerb.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Masterplanung" data-en="Masterplanning">Masterplanung</span>
+            <h3 class="project-card__title">Stadt Reutlingen Ideenwettbewerb</h3>
+            <p class="project-card__meta">Reutlingen, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-ritep.html" class="project-card" data-category="Kultur & Veranstaltung" data-name="ritep rwanda international trade fair and exhibition park">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/ritep/cover.jpg" alt="RITEP Rwanda International Trade Fair and Exhibition Park" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/ritep.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Kultur &amp; Veranstaltung" data-en="Culture &amp; Events">Kultur &amp; Veranstaltung</span>
+            <h3 class="project-card__title">RITEP Rwanda International Trade Fair and Exhibition Park</h3>
+            <p class="project-card__meta">Kigali, RW</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-rwanda-museum.html" class="project-card" data-category="Kultur & Veranstaltung" data-name="ruanda museum">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/rwanda-museum/cover.jpg" alt="Ruanda Museum" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/rwanda-museum.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Kultur &amp; Veranstaltung" data-en="Culture &amp; Events">Kultur &amp; Veranstaltung</span>
+            <h3 class="project-card__title">Ruanda Museum</h3>
+            <p class="project-card__meta">Kigali, RW</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-schule-wessling.html" class="project-card" data-category="Masterplanung" data-name="machbarkeitsstudie schule weßling">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/schule-wessling/cover.png" alt="Machbarkeitsstudie Schule Weßling" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/schule-wessling.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Masterplanung" data-en="Masterplanning">Masterplanung</span>
+            <h3 class="project-card__title">Machbarkeitsstudie Schule Weßling</h3>
+            <p class="project-card__meta">Weßling, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-service-center-tripolis.html" class="project-card" data-category="Masterplanung" data-name="service center tripolis">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/service-center-tripolis/cover.jpg" alt="Service Center Tripolis" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/service-center-tripolis.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Masterplanung" data-en="Masterplanning">Masterplanung</span>
+            <h3 class="project-card__title">Service Center Tripolis</h3>
+            <p class="project-card__meta">Tripolis, LY</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-siegle-epple-erweiterung.html" class="project-card" data-category="Masterplanung" data-name="erweiterung der firmenzentrale siegle + epple">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/siegle-epple-erweiterung/cover.jpg" alt="Erweiterung der Firmenzentrale Siegle + Epple" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/siegle-epple-erweiterung.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Masterplanung" data-en="Masterplanning">Masterplanung</span>
+            <h3 class="project-card__title">Erweiterung der Firmenzentrale Siegle + Epple</h3>
+            <p class="project-card__meta">Stuttgart, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-siemens-den-haag.html" class="project-card" data-category="Büro & Industrie" data-name="siemens hauptverwaltung der landesgesellschaft der niederlande">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/siemens-den-haag/cover.jpg" alt="Siemens Hauptverwaltung der Landesgesellschaft der Niederlande" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/siemens-den-haag.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Büro &amp; Industrie" data-en="Office &amp; Industry">Büro &amp; Industrie</span>
+            <h3 class="project-card__title">Siemens Hauptverwaltung der Landesgesellschaft der Niederlande</h3>
+            <p class="project-card__meta">Den Haag, NL</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-siemens-evora.html" class="project-card" data-category="Büro & Industrie" data-name="tantal-chip-fabrik für siemens-matsushita">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/siemens-evora/cover.jpg" alt="Tantal-Chip-Fabrik für Siemens-Matsushita" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/siemens-evora.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Büro &amp; Industrie" data-en="Office &amp; Industry">Büro &amp; Industrie</span>
+            <h3 class="project-card__title">Tantal-Chip-Fabrik für Siemens-Matsushita</h3>
+            <p class="project-card__meta">Evora, PT</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-siemens-lissabon.html" class="project-card" data-category="Büro & Industrie" data-name="erweiterung der siemens hauptverwaltung der landesgesellschaft portugal">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/siemens-lissabon/cover.jpg" alt="Erweiterung der Siemens Hauptverwaltung der Landesgesellschaft Portugal" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/siemens-lissabon.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Büro &amp; Industrie" data-en="Office &amp; Industry">Büro &amp; Industrie</span>
+            <h3 class="project-card__title">Erweiterung der Siemens Hauptverwaltung der Landesgesellschaft Portugal</h3>
+            <p class="project-card__meta">Lissabon, PT</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-siemens-semiconductores.html" class="project-card" data-category="Büro & Industrie" data-name="siemens semicondutores">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/siemens-semiconductores/cover.jpg" alt="Siemens Semicondutores" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/siemens-semiconductores.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Büro &amp; Industrie" data-en="Office &amp; Industry">Büro &amp; Industrie</span>
+            <h3 class="project-card__title">Siemens Semicondutores</h3>
+            <p class="project-card__meta">Mindelo, PT</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-siemens-singapur.html" class="project-card" data-category="Büro & Industrie" data-name="firmenzentrale siemens">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/siemens-singapur/cover.jpg" alt="Firmenzentrale Siemens" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/siemens-singapur.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Büro &amp; Industrie" data-en="Office &amp; Industry">Büro &amp; Industrie</span>
+            <h3 class="project-card__title">Firmenzentrale Siemens</h3>
+            <p class="project-card__meta">Singapur, SG</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-siemens-st-martin.html" class="project-card" data-category="Büro & Industrie" data-name="büropark siemens st.-martin-straße">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/siemens-st-martin/cover.jpg" alt="Büropark Siemens St.-Martin-Straße" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/siemens-st-martin.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Büro &amp; Industrie" data-en="Office &amp; Industry">Büro &amp; Industrie</span>
+            <h3 class="project-card__title">Büropark Siemens St.-Martin-Straße</h3>
+            <p class="project-card__meta">München, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-siemens-trutnow.html" class="project-card" data-category="Büro & Industrie" data-name="siemens und infineon fabrikation">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/siemens-trutnow/cover.jpg" alt="Siemens und Infineon Fabrikation" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/siemens-trutnow.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Büro &amp; Industrie" data-en="Office &amp; Industry">Büro &amp; Industrie</span>
+            <h3 class="project-card__title">Siemens und Infineon Fabrikation</h3>
+            <p class="project-card__meta">Trutnow, CZ</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-siemens-turbinenfabrik.html" class="project-card" data-category="Büro & Industrie" data-name="siemens turbinenfabrik">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/siemens-turbinenfabrik/cover.jpg" alt="Siemens Turbinenfabrik" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/siemens-turbinenfabrik.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Büro &amp; Industrie" data-en="Office &amp; Industry">Büro &amp; Industrie</span>
+            <h3 class="project-card__title">Siemens Turbinenfabrik</h3>
+            <p class="project-card__meta">Mühlheim, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-siemens-zoetermeer.html" class="project-card" data-category="Büro & Industrie" data-name="siemens technologie- und betriebszentrum">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/siemens-zoetermeer/cover.jpg" alt="Siemens Technologie- und Betriebszentrum" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/siemens-zoetermeer.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Büro &amp; Industrie" data-en="Office &amp; Industry">Büro &amp; Industrie</span>
+            <h3 class="project-card__title">Siemens Technologie- und Betriebszentrum</h3>
+            <p class="project-card__meta">Zoetermeer, NL</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-sport-kulturhalle-dusslingen.html" class="project-card" data-category="Kultur & Veranstaltung" data-name="sport- und kulturhalle">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/sport-kulturhalle-dusslingen/cover.jpg" alt="Sport- und Kulturhalle" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/sport-kulturhalle-dusslingen.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Kultur &amp; Veranstaltung" data-en="Culture &amp; Events">Kultur &amp; Veranstaltung</span>
+            <h3 class="project-card__title">Sport- und Kulturhalle</h3>
+            <p class="project-card__meta">Dußlingen, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-stihl-dieburg.html" class="project-card" data-category="Kultur & Veranstaltung" data-name="stihl vertriebszentrale">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/stihl-dieburg/cover.jpg" alt="Stihl Vertriebszentrale" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/stihl-dieburg.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Kultur &amp; Veranstaltung" data-en="Culture &amp; Events">Kultur &amp; Veranstaltung</span>
+            <h3 class="project-card__title">Stihl Vertriebszentrale</h3>
+            <p class="project-card__meta">Dieburg, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-stihl-halle-800.html" class="project-card" data-category="Masterplanung" data-name="masterplan und entwurf des gebäudekonzeptes für stihl torcy">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/stihl-halle-800/cover.jpg" alt="Masterplan und Entwurf des Gebäudekonzeptes für STIHL Torcy" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/stihl-halle-800.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Masterplanung" data-en="Masterplanning">Masterplanung</span>
+            <h3 class="project-card__title">Masterplan und Entwurf des Gebäudekonzeptes für STIHL Torcy</h3>
+            <p class="project-card__meta">Waiblingen, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-stihl-oradea.html" class="project-card" data-category="Büro & Industrie" data-name="neue fabrik für stihl in oradea, rumänien">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/stihl-oradea/cover.png" alt="Neue Fabrik für STIHL in Oradea, Rumänien" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/stihl-oradea.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Büro &amp; Industrie" data-en="Office &amp; Industry">Büro &amp; Industrie</span>
+            <h3 class="project-card__title">Neue Fabrik für STIHL in Oradea, Rumänien</h3>
+            <p class="project-card__meta">Oradea, RO</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-stihl-pruem.html" class="project-card" data-category="Masterplanung" data-name="masterplan und entwurf des gebäudekonzeptes für stihl torcy">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/stihl-pruem/cover.jpg" alt="Masterplan und Entwurf des Gebäudekonzeptes für STIHL Torcy" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/stihl-pruem.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Masterplanung" data-en="Masterplanning">Masterplanung</span>
+            <h3 class="project-card__title">Masterplan und Entwurf des Gebäudekonzeptes für STIHL Torcy</h3>
+            <p class="project-card__meta">Prüm, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-stihl-qingdao.html" class="project-card" data-category="Masterplanung" data-name="produktionswerk power tools andreas stihl">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/stihl-qingdao/cover.jpg" alt="Produktionswerk Power Tools Andreas Stihl" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/stihl-qingdao.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Masterplanung" data-en="Masterplanning">Masterplanung</span>
+            <h3 class="project-card__title">Produktionswerk Power Tools Andreas Stihl</h3>
+            <p class="project-card__meta">Qingdao, CN</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-stihl-torcy.html" class="project-card" data-category="Masterplanung" data-name="masterplan und entwurf des gebäudekonzeptes für stihl torcy">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/stihl-torcy/cover.jpg" alt="Masterplan und Entwurf des Gebäudekonzeptes für STIHL Torcy" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/stihl-torcy.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Masterplanung" data-en="Masterplanning">Masterplanung</span>
+            <h3 class="project-card__title">Masterplan und Entwurf des Gebäudekonzeptes für STIHL Torcy</h3>
+            <p class="project-card__meta">Paris-Torcy, FR</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-stihl-waiblingen-d1-d2.html" class="project-card" data-category="Masterplanung" data-name="masterplan für stihl werksentwicklung d1 und d2">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/stihl-waiblingen-d1-d2/cover.jpg" alt="Masterplan für STIHL Werksentwicklung D1 und D2" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/stihl-waiblingen-d1-d2.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Masterplanung" data-en="Masterplanning">Masterplanung</span>
+            <h3 class="project-card__title">Masterplan für STIHL Werksentwicklung D1 und D2</h3>
+            <p class="project-card__meta">Waiblingen, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-studentisches-wohnen-weiden.html" class="project-card" data-category="Hotels, Wohnen & Gesundheit" data-name="studentenwohnheim "am postkeller"">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/studentisches-wohnen-weiden/cover.jpg" alt="Studentenwohnheim "Am Postkeller"" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/studentisches-wohnen-weiden.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Hotels, Wohnen &amp; Gesundheit" data-en="Hotels, Living &amp; Health">Hotels, Wohnen &amp; Gesundheit</span>
+            <h3 class="project-card__title">Studentenwohnheim "Am Postkeller"</h3>
+            <p class="project-card__meta">Weiden, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-tala-bay-aqaba.html" class="project-card" data-category="Hotels, Wohnen & Gesundheit" data-name="tala bay resort & oasis">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/tala-bay-aqaba/cover.jpg" alt="Tala Bay Resort & Oasis" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/tala-bay-aqaba.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Hotels, Wohnen &amp; Gesundheit" data-en="Hotels, Living &amp; Health">Hotels, Wohnen &amp; Gesundheit</span>
+            <h3 class="project-card__title">Tala Bay Resort & Oasis</h3>
+            <p class="project-card__meta">Aqaba, JO</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-therme-bad-brueckenau.html" class="project-card" data-category="Hotels, Wohnen & Gesundheit" data-name="therme sinnflut bad brückenau">
+          <div class="project-card__img-wrap">
+    <img src="media/hero-background.png" alt="Therme Sinnflut Bad Brückenau" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/therme-bad-brueckenau.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Hotels, Wohnen &amp; Gesundheit" data-en="Hotels, Living &amp; Health">Hotels, Wohnen &amp; Gesundheit</span>
+            <h3 class="project-card__title">Therme Sinnflut Bad Brückenau</h3>
+            <p class="project-card__meta">Bad Brückenau, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-villa-lutendele.html" class="project-card" data-category="Hotels, Wohnen & Gesundheit" data-name="nachhaltige villa für eine großfamilie in lutendele, demokratische republik kongo">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/villa-lutendele/cover.jpg" alt="Nachhaltige Villa für eine Großfamilie in Lutendele, Demokratische Republik Kongo" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/villa-lutendele.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Hotels, Wohnen &amp; Gesundheit" data-en="Hotels, Living &amp; Health">Hotels, Wohnen &amp; Gesundheit</span>
+            <h3 class="project-card__title">Nachhaltige Villa für eine Großfamilie in Lutendele, Demokratische Republik Kongo</h3>
+            <p class="project-card__meta">Kinshasa, CD</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-waiblingen-digital-factory.html" class="project-card" data-category="Masterplanung" data-name="waiblingen digital factory">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/waiblingen-digital-factory/cover.jpg" alt="Waiblingen Digital Factory" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/waiblingen-digital-factory.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Masterplanung" data-en="Masterplanning">Masterplanung</span>
+            <h3 class="project-card__title">Waiblingen Digital Factory</h3>
+            <p class="project-card__meta">Waiblingen, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-werk-hochleistungsdrucker.html" class="project-card" data-category="Büro & Industrie" data-name="werk für hochleistungsdrucker">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/werk-hochleistungsdrucker/cover.jpg" alt="Werk für Hochleistungsdrucker" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/werk-hochleistungsdrucker.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Büro &amp; Industrie" data-en="Office &amp; Industry">Büro &amp; Industrie</span>
+            <h3 class="project-card__title">Werk für Hochleistungsdrucker</h3>
+            <p class="project-card__meta">Poing, DE</p>
+          </div>
+        </a>
+        <a href="Projekte/projekt-wohnpark-rotbad.html" class="project-card" data-category="Masterplanung" data-name="wohnpark "im rotbad"">
+          <div class="project-card__img-wrap">
+    <img src="media/portfolio/wohnpark-rotbad/cover.jpg" alt="Wohnpark "Im Rotbad"" class="project-card__img" loading="lazy" width="600" height="375">
+    <img src="media/projekt-logos/wohnpark-rotbad.jpg" class="project-card__logo" alt="" aria-hidden="true">
+  </div>
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Masterplanung" data-en="Masterplanning">Masterplanung</span>
+            <h3 class="project-card__title">Wohnpark "Im Rotbad"</h3>
+            <p class="project-card__meta">Tübingen, DE</p>
+          </div>
+        </a>
+
+        <p class="no-results" data-de="Keine Projekte gefunden." data-en="No projects found.">Keine Projekte gefunden.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="media/logo-sps-ibr.jpg" alt="SPS-IBR" height="30">
+        <p class="footer-brand__tagline" data-de="Vision trifft System" data-en="Vision meets System">Vision trifft System</p>
+        <div class="footer-brand__logos">
+          <a href="https://www.spacial-solutions.com" target="_blank" rel="noopener noreferrer" aria-label="Spacial Solutions"><img src="media/logo-spacial-solutions.jpg" alt="Spacial Solutions" height="24"></a>
+          <a href="https://www.ibrauscher.de" target="_blank" rel="noopener noreferrer" aria-label="Ingenieurbüro Rauscher"><img src="media/logo-ibrauscher.jpg" alt="Ingenieurbüro Rauscher" height="24"></a>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <div class="footer-nav__title" data-de="Navigation" data-en="Navigation">Navigation</div>
+        <ul class="footer-nav__list">
+          <li><a href="buero.html" class="footer-nav__link" data-de="Büro" data-en="Office">Büro</a></li>
+          <li><a href="index.html#aktuell" class="footer-nav__link" data-de="Aktuell" data-en="News">Aktuell</a></li>
+          <li><a href="nachhaltigkeit.html" class="footer-nav__link" data-de="Nachhaltigkeit" data-en="Sustainability">Nachhaltigkeit</a></li>
+          <li><a href="projekte.html" class="footer-nav__link" data-de="Projekte" data-en="Projects">Projekte</a></li>
+          <li><a href="index.html#kontakt" class="footer-nav__link" data-de="Kontakt" data-en="Contact">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <div class="footer-contact__title" data-de="Kontakt" data-en="Contact">Kontakt</div>
+        <address>
+          <p class="footer-contact__line">Brienner Strasse 46</p>
+          <p class="footer-contact__line">80333 München</p>
+          <p class="footer-contact__line"><a href="tel:+4989547265910">+49 89 5472659 10</a></p>
+          <p class="footer-contact__line"><a href="mailto:info@spacial-solutions.com">info@spacial-solutions.com</a></p>
+        </address>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <span>© <span class="footer-year">2026</span> SPS-IBR</span>
+      <span class="pipe" aria-hidden="true">|</span>
+      <a href="impressum.html" data-de="Impressum" data-en="Legal Notice">Impressum</a>
+      <span class="pipe" aria-hidden="true">|</span>
+      <a href="datenschutz.html" data-de="Datenschutz" data-en="Privacy Policy">Datenschutz</a>
+    </div>
+  </footer>
+
+  <script src="js/lang.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/projekte.js"></script>
+</body>
+</html>

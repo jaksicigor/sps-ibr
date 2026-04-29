@@ -1,0 +1,55 @@
+🇩🇪 Projekttext (Website – Deutsch)
+3D-Bestandsaufnahme & BIM-Modellierung
+
+Laser-Scan Technologie als Grundlage für präzise Planung
+
+Für komplexe Bestandsgebäude bildet die exakte Kenntnis der realen Geometrie die Grundlage jeder erfolgreichen Planung. Im Rahmen dieses Projekts wurde eine umfassende 3D-Bestandsaufnahme mittels moderner Laserscantechnologie durchgeführt und in ein strukturiertes BIM-Modell überführt.
+
+Der eingesetzte 3D-Laserscan ermöglicht die berührungslose Erfassung von Millionen Messpunkten und bildet den Bestand als hochpräzise Punktwolke ab. Dadurch entsteht ein digitales Abbild des Gebäudes mit millimetergenauer Genauigkeit – unabhängig von vorhandenen, oft unvollständigen oder veralteten Planunterlagen.
+
+Auf Basis dieser Daten wurde eine systematische Weiterverarbeitung durchgeführt:
+
+Strukturierung und Filterung der Punktwolke
+Identifikation relevanter Bauteile und Ebenen
+Ableitung von Achsen, Geometrien und Gebäudestrukturen
+Überführung in ein BIM-fähiges Revit-Bestandsmodell
+
+Ergänzend wurden 360°-Panoramaaufnahmen integriert, die eine realitätsnahe digitale Begehung ermöglichen. Dadurch können Gebäudezustände, Details und räumliche Zusammenhänge direkt am Bildschirm analysiert und vermessen werden.
+
+Das resultierende digitale Modell dient als zentrale Planungsgrundlage für:
+
+Erstellung von Grundrissen, Schnitten und Ansichten
+Integration in Neubau- und Umbaumaßnahmen
+Kollisionsprüfungen mit Tragwerk und TGA
+Minimierung von Planungsrisiken und Baustellenabweichungen
+
+Ergebnis:
+Aus einer reinen Datenerfassung entsteht eine belastbare, strukturierte und zukunftsfähige Entscheidungsgrundlage für die gesamte Projektentwicklung.
+
+🇬🇧 Project Text (Website – English)
+3D Existing Building Survey & BIM Modeling
+
+Laser scanning as a foundation for precise planning
+
+Accurate knowledge of existing conditions is essential for any successful planning process. Within this project, a comprehensive 3D survey of the building was carried out using advanced laser scanning technology and transformed into a structured BIM model.
+
+The applied 3D laser scanning method captures millions of measurement points without physical contact, generating a highly accurate point cloud that represents the real building geometry. This creates a digital twin with millimeter precision, independent of outdated or incomplete existing drawings.
+
+Based on this dataset, a structured processing workflow was implemented:
+
+Filtering and structuring of the point cloud
+Identification of relevant elements and building components
+Extraction of axes, levels, and geometrical systems
+Conversion into a BIM-ready Revit as-built model
+
+Additionally, 360° panoramic images were integrated into the dataset, enabling realistic digital walkthroughs. This allows for detailed analysis, measurements, and spatial understanding directly on screen.
+
+The resulting digital model serves as a central planning basis for:
+
+Creation of floor plans, sections, and elevations
+Integration into refurbishment and new-build design
+Clash detection with structural and MEP systems
+Reduction of planning risks and construction uncertainties
+
+Result:
+Raw measurement data is transformed into a structured, reliable, and future-oriented decision-making foundation for the entire project lifecycle.

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nachhaltigkeit — SPS-IBR</title>
+  <meta name="description" content="SPS-IBR — Nachhaltigkeit als System. Energie, Material und digitale Methoden für zukunftsfähige Architektur.">
+  <meta property="og:title" content="Nachhaltigkeit — SPS-IBR">
+  <meta property="og:description" content="SPS-IBR — Nachhaltigkeit als System. Energie, Material und digitale Methoden für zukunftsfähige Architektur.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://www.sps-ibr.com/nachhaltigkeit.html">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Sticky Section Nav */
+    .section-nav {
+      position: sticky;
+      top: 72px;
+      z-index: 90;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      gap: 0;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .section-nav::-webkit-scrollbar { display: none; }
+    .section-nav__link {
+      padding: 14px 24px;
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      white-space: nowrap;
+      border-bottom: 2px solid transparent;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .section-nav__link:hover,
+    .section-nav__link.active {
+      color: var(--text);
+      border-bottom-color: var(--green);
+    }
+
+    /* Nachhaltigkeits-specific blocks */
+    .nachh-intro {
+      max-width: 800px;
+    }
+    .nachh-intro p + p { margin-top: var(--space-s); }
+
+    .nachh-block-group {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-top: var(--space-m);
+    }
+    .nachh-block {
+      border-top: 2px solid var(--green);
+      padding-top: var(--space-s);
+    }
+    .nachh-block h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: var(--space-xs);
+      letter-spacing: 0.02em;
+    }
+    .nachh-block p {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      line-height: 1.8;
+    }
+
+    /* Projekt Highlight */
+    .projekt-highlight {
+      background: var(--surface-alt);
+      border-left: 3px solid var(--green);
+      padding: var(--space-m) var(--space-m);
+      margin-top: var(--space-l);
+    }
+    .projekt-highlight__label {
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: var(--space-xs);
+    }
+    .projekt-highlight__title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: var(--space-s);
+    }
+    .projekt-highlight ul {
+      list-style: none;
+      margin-top: var(--space-s);
+    }
+    .projekt-highlight ul li {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      padding: 6px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .projekt-highlight ul li::before {
+      content: '— ';
+      color: var(--green);
+    }
+
+    /* Standards strip */
+    .standards-strip {
+      display: flex;
+      align-items: center;
+      gap: var(--space-m);
+      flex-wrap: wrap;
+      margin-top: var(--space-m);
+    }
+    .standards-strip .standard-badge {
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 8px 20px;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+    }
+
+    /* CTA block */
+    .nachh-cta {
+      text-align: center;
+      padding: var(--space-l) 0;
+    }
+    .nachh-cta h2 {
+      font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+      margin-bottom: var(--space-m);
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .nachh-cta .cta-group {
+      display: flex;
+      justify-content: center;
+      gap: var(--space-m);
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 768px) {
+      .nachh-block-group { grid-template-columns: 1fr; }
+      .section-nav__link { padding: 12px 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link" data-de="Zum Inhalt springen" data-en="Skip to content">Zum Inhalt springen</a>
+
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <div class="header-logo">
+      <a href="index.html" aria-label="SPS-IBR — Zur Startseite">
+        <img src="media/logo-sps-ibr.jpg" alt="SPS-IBR Logo" width="140" height="36">
+      </a>
+    </div>
+    <nav class="main-nav" aria-label="Hauptnavigation">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="buero.html" class="main-nav__link" data-de="Büro" data-en="Office">Büro</a></li>
+        <li class="main-nav__item"><span class="pipe" aria-hidden="true">|</span></li>
+        <li class="main-nav__item"><a href="index.html#aktuell" class="main-nav__link" data-de="Aktuell" data-en="News">Aktuell</a></li>
+        <li class="main-nav__item"><span class="pipe" aria-hidden="true">|</span></li>
+        <li class="main-nav__item"><a href="nachhaltigkeit.html" class="main-nav__link" data-de="Nachhaltigkeit" data-en="Sustainability">Nachhaltigkeit</a></li>
+        <li class="main-nav__item"><span class="pipe" aria-hidden="true">|</span></li>
+        <li class="main-nav__item"><a href="projekte.html" class="main-nav__link" data-de="Projekte" data-en="Projects">Projekte</a></li>
+        <li class="main-nav__item"><span class="pipe" aria-hidden="true">|</span></li>
+        <li class="main-nav__item"><a href="index.html#kontakt" class="main-nav__link" data-de="Kontakt" data-en="Contact">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div class="lang-toggle desktop-only">
+      <button class="lang-toggle__btn" data-lang="de" aria-pressed="true">DE</button>
+      <span class="lang-toggle__sep">/</span>
+      <button class="lang-toggle__btn" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <button class="hamburger" aria-expanded="false" aria-controls="mobile-nav" aria-label="Menü öffnen">
+      <span class="hamburger__line"></span>
+      <span class="hamburger__line"></span>
+      <span class="hamburger__line"></span>
+    </button>
+  </header>
+
+  <div class="mobile-nav" id="mobile-nav" role="dialog" aria-modal="true" aria-label="Navigation">
+    <a href="buero.html" class="mobile-nav__link" data-de="Büro" data-en="Office">Büro</a>
+    <a href="index.html#aktuell" class="mobile-nav__link" data-de="Aktuell" data-en="News">Aktuell</a>
+    <a href="nachhaltigkeit.html" class="mobile-nav__link" data-de="Nachhaltigkeit" data-en="Sustainability">Nachhaltigkeit</a>
+    <a href="projekte.html" class="mobile-nav__link" data-de="Projekte" data-en="Projects">Projekte</a>
+    <a href="index.html#kontakt" class="mobile-nav__link" data-de="Kontakt" data-en="Contact">Kontakt</a>
+    <div class="lang-toggle">
+      <button class="lang-toggle__btn" data-lang="de" aria-pressed="true">DE</button>
+      <span class="lang-toggle__sep">/</span>
+      <button class="lang-toggle__btn" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="hero-page">
+      <div class="hero-page__bg">
+        <img src="media/nachhaltigkeit-hero.png" alt="" loading="eager" width="1920" height="800">
+      </div>
+      <div class="hero-page__content">
+        <span class="section-label" data-de="Systemdenken" data-en="Systems Thinking">Systemdenken</span>
+        <h1 data-de="Nachhaltigkeit als System" data-en="Sustainability as a System">Nachhaltigkeit als System</h1>
+        <p style="max-width:640px; margin-top: var(--space-s); font-size:1rem; opacity:0.8;" data-de="Wir entwickeln Gebäude als integrierte Systeme aus Energie, Struktur und Nutzung — mit dem Ziel, langfristig funktionierende Lösungen zu schaffen: technisch, ökologisch und wirtschaftlich." data-en="We develop buildings as integrated systems of energy, structure and use — with the goal of creating long-term solutions: technically, ecologically and economically.">Wir entwickeln Gebäude als integrierte Systeme aus Energie, Struktur und Nutzung — mit dem Ziel, langfristig funktionierende Lösungen zu schaffen: technisch, ökologisch und wirtschaftlich.</p>
+      </div>
+    </section>
+
+    <!-- STICKY SECTION NAV -->
+    <nav class="section-nav" aria-label="Seitennavigation">
+      <a href="#ansatz" class="section-nav__link" data-de="Ansatz" data-en="Approach">Ansatz</a>
+      <a href="#energie-systeme" class="section-nav__link" data-de="Energie-Systeme" data-en="Energy Systems">Energie-Systeme</a>
+      <a href="#material-ressourcen" class="section-nav__link" data-de="Material &amp; Ressourcen" data-en="Material &amp; Resources">Material &amp; Ressourcen</a>
+      <a href="#digitale-methoden" class="section-nav__link" data-de="Digitale Methoden" data-en="Digital Methods">Digitale Methoden</a>
+      <a href="#standards" class="section-nav__link" data-de="Standards" data-en="Standards">Standards</a>
+    </nav>
+
+    <!-- UNSER ANSATZ -->
+    <section class="section fade-in" id="ansatz">
+      <span class="section-label" data-de="Unser Ansatz" data-en="Our Approach">Unser Ansatz</span>
+      <h2 class="section-title" data-de="Zukunftsfähig planen" data-en="Planning for the future">Zukunftsfähig planen</h2>
+
+      <div class="nachh-intro">
+        <p data-de="Nachhaltigkeit ist kein Add-on. Sie ist die Systemlogik, nach der wir Gebäude entwickeln." data-en="Sustainability is not an add-on. It is the system logic by which we develop buildings."><strong data-de="Nachhaltigkeit ist kein Add-on." data-en="Sustainability is not an add-on.">Nachhaltigkeit ist kein Add-on.</strong><br><strong data-de="Sie ist die Systemlogik, nach der wir Gebäude entwickeln." data-en="It is the system logic by which we develop buildings.">Sie ist die Systemlogik, nach der wir Gebäude entwickeln.</strong></p>
+
+        <p style="margin-top: var(--space-s);" data-de="Wir verstehen Gebäude als integrierte Systeme aus Energie, Struktur und Nutzung — und entwickeln Lösungen, die technisch, ökologisch und wirtschaftlich langfristig funktionieren." data-en="We understand buildings as integrated systems of energy, structure and use — and develop solutions that work in the long term: technically, ecologically and economically.">Wir verstehen Gebäude als integrierte Systeme aus Energie, Struktur und Nutzung — und entwickeln Lösungen, die technisch, ökologisch und wirtschaftlich langfristig funktionieren.</p>
+
+        <p style="margin-top: var(--space-s);" data-de="Unser Fokus liegt auf klaren, robusten Konzepten, die von Beginn an integrativ gedacht sind — von der ersten Idee bis zur Umsetzung." data-en="Our focus is on clear, robust concepts that are thought integratively from the start — from the first idea to implementation.">Unser Fokus liegt auf klaren, robusten Konzepten, die von Beginn an integrativ gedacht sind — von der ersten Idee bis zur Umsetzung.</p>
+      </div>
+    </section>
+
+    <!-- ENERGIE-SYSTEME -->
+    <section class="section fade-in" id="energie-systeme" style="background: var(--surface);">
+      <span class="section-label" data-de="Energie-Systeme" data-en="Energy Systems">Energie-Systeme</span>
+      <h2 class="section-title" data-de="Energie-Systeme" data-en="Energy Systems">Energie-Systeme</h2>
+
+      <p style="max-width: 700px; color: var(--text-muted);" data-de="Wir entwickeln Energiesysteme, die Gebäude unabhängig, effizient und zukunftsfähig machen." data-en="We develop energy systems that make buildings independent, efficient and future-proof.">Wir entwickeln Energiesysteme, die Gebäude unabhängig, effizient und zukunftsfähig machen.</p>
+
+      <div class="nachh-block-group">
+        <div class="nachh-block">
+          <h3 data-de="Langzeitspeicher-Systeme" data-en="Long-term Storage Systems">Langzeitspeicher-Systeme</h3>
+          <p data-de="Wir planen Energiesysteme mit saisonaler Speicherlogik, die Erzeugung und Verbrauch entkoppeln — als Grundlage für echte Energieautonomie." data-en="We design energy systems with seasonal storage logic that decouple generation and consumption — as the basis for true energy autonomy.">Wir planen Energiesysteme mit saisonaler Speicherlogik, die Erzeugung und Verbrauch entkoppeln — als Grundlage für echte Energieautonomie.</p>
+        </div>
+
+        <div class="nachh-block">
+          <h3 data-de="Innovative Energietechnologien" data-en="Innovative Energy Technologies">Innovative Energietechnologien</h3>
+          <p data-de="Von Wärmepumpen und Geothermie bis zu wasserstofffähigen Infrastrukturen integrieren wir Technologien, die langfristig skalierbar und wirtschaftlich sind." data-en="From heat pumps and geothermal energy to hydrogen-ready infrastructures, we integrate technologies that are scalable and economically viable long-term.">Von Wärmepumpen und Geothermie bis zu wasserstofffähigen Infrastrukturen integrieren wir Technologien, die langfristig skalierbar und wirtschaftlich sind.</p>
+        </div>
+
+        <div class="nachh-block">
+          <h3 data-de="Energetische Unabhängigkeit" data-en="Energy Independence">Energetische Unabhängigkeit</h3>
+          <p data-de="Durch die intelligente Kombination von Erzeugung, Speicherung und Lastmanagement reduzieren wir die Abhängigkeit von externen Versorgungsstrukturen." data-en="Through the intelligent combination of generation, storage and load management, we reduce dependence on external supply structures.">Durch die intelligente Kombination von Erzeugung, Speicherung und Lastmanagement reduzieren wir die Abhängigkeit von externen Versorgungsstrukturen.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MATERIAL & RESSOURCEN -->
+    <section class="section fade-in" id="material-ressourcen">
+      <span class="section-label" data-de="Material &amp; Ressourcen" data-en="Material &amp; Resources">Material &amp; Ressourcen</span>
+      <h2 class="section-title" data-de="Material &amp; Ressourcen" data-en="Material &amp; Resources">Material &amp; Ressourcen</h2>
+
+      <p style="max-width: 700px; color: var(--text-muted);" data-de="Wir entwickeln Bauweisen, die Ressourcen schonen und langfristige Kreisläufe ermöglichen." data-en="We develop construction methods that conserve resources and enable long-term cycles.">Wir entwickeln Bauweisen, die Ressourcen schonen und langfristige Kreisläufe ermöglichen.</p>
+
+      <div class="nachh-block-group" style="grid-template-columns: repeat(2, 1fr);">
+        <div class="nachh-block">
+          <h3 data-de="Nutzung natürlicher Ressourcen" data-en="Use of Natural Resources">Nutzung natürlicher Ressourcen</h3>
+          <p data-de="Wir setzen auf regionale, nachwachsende und nachhaltige Materialien und integrieren Tageslicht, natürliche Belüftung und geothermische Potenziale in die Planung." data-en="We rely on regional, renewable and sustainable materials and integrate daylight, natural ventilation and geothermal potentials into the planning.">Wir setzen auf regionale, nachwachsende und nachhaltige Materialien und integrieren Tageslicht, natürliche Belüftung und geothermische Potenziale in die Planung.</p>
+        </div>
+
+        <div class="nachh-block">
+          <h3 data-de="Kreislaufwirtschaft" data-en="Circular Economy">Kreislaufwirtschaft</h3>
+          <p data-de="Wir denken Gebäude über ihren gesamten Lebenszyklus hinweg — mit Fokus auf Rückbaubarkeit, Wiederverwendbarkeit und Materialtransparenz." data-en="We think about buildings across their entire lifecycle — with a focus on deconstruction capability, reusability and material transparency.">Wir denken Gebäude über ihren gesamten Lebenszyklus hinweg — mit Fokus auf Rückbaubarkeit, Wiederverwendbarkeit und Materialtransparenz.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIGITALE METHODEN -->
+    <section class="section fade-in" id="digitale-methoden" style="background: var(--surface);">
+      <span class="section-label" data-de="Digitale Methoden" data-en="Digital Methods">Digitale Methoden</span>
+      <h2 class="section-title" data-de="Digitale Methoden" data-en="Digital Methods">Digitale Methoden</h2>
+
+      <p style="max-width: 700px; color: var(--text-muted);" data-de="Digitale Werkzeuge sind für uns Grundlage präziser, koordinierter und sicherer Planung." data-en="Digital tools are the basis for precise, coordinated and safe planning for us.">Digitale Werkzeuge sind für uns Grundlage präziser, koordinierter und sicherer Planung.</p>
+
+      <div class="nachh-block-group" style="grid-template-columns: repeat(2, 1fr);">
+        <div class="nachh-block">
+          <h3 data-de="BIM-Integration" data-en="BIM Integration">BIM-Integration</h3>
+          <p data-de="Wir nutzen BIM als zentrales Steuerungsinstrument für Planung, Koordination und Qualitätssicherung — über alle Projektphasen hinweg." data-en="We use BIM as a central management tool for planning, coordination and quality assurance — across all project phases.">Wir nutzen BIM als zentrales Steuerungsinstrument für Planung, Koordination und Qualitätssicherung — über alle Projektphasen hinweg.</p>
+        </div>
+
+        <div class="nachh-block">
+          <h3 data-de="3D-Laserscanning im Bestand" data-en="3D Laser Scanning of Existing Buildings">3D-Laserscanning im Bestand</h3>
+          <p data-de="Laserscanning liefert die reale geometrische Grundlage. Die daraus entstehenden Punktwolken werden in strukturierte BIM-Modelle überführt und ermöglichen eine verlässliche Planung im Bestand." data-en="Laser scanning provides the real geometric basis. The resulting point clouds are converted into structured BIM models and enable reliable planning in existing buildings.">Laserscanning liefert die reale geometrische Grundlage. Die daraus entstehenden Punktwolken werden in strukturierte BIM-Modelle überführt und ermöglichen eine verlässliche Planung im Bestand.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- AKTUELLES PROJEKT -->
+    <section class="section fade-in">
+      <span class="section-label" data-de="Aktuelles Projekt" data-en="Current Project">Aktuelles Projekt</span>
+      <h2 class="section-title" data-de="BioCampus MultiPilot, Straubing" data-en="BioCampus MultiPilot, Straubing">BioCampus MultiPilot, Straubing</h2>
+
+      <div class="projekt-highlight">
+        <p class="projekt-highlight__label" data-de="Leuchtturmprojekt" data-en="Lighthouse Project">Leuchtturmprojekt</p>
+        <p class="projekt-highlight__title" data-de="BioCampus MultiPilot, Straubing" data-en="BioCampus MultiPilot, Straubing">BioCampus MultiPilot, Straubing</p>
+        <p style="color: var(--text-muted); font-size:0.9rem; max-width:700px;" data-de="Leuchtturmprojekt (ca. 90 Mio. €) mit Fokus auf innovative, nachhaltige Systemlösungen. Dieses Projekt steht exemplarisch für unseren integralen Planungsansatz." data-en="Lighthouse project (approx. €90M) focusing on innovative, sustainable system solutions. This project exemplifies our integral planning approach.">Leuchtturmprojekt (ca. 90 Mio. €) mit Fokus auf innovative, nachhaltige Systemlösungen. Dieses Projekt steht exemplarisch für unseren integralen Planungsansatz.</p>
+        <ul>
+          <li data-de="Holz-Stahl-Beton Hybridbau" data-en="Wood-steel-concrete hybrid construction">Holz-Stahl-Beton Hybridbau</li>
+          <li data-de="CO₂-reduzierte und CO₂-negative Materialien" data-en="CO₂-reduced and CO₂-negative materials">CO₂-reduzierte und CO₂-negative Materialien</li>
+          <li data-de="EU-Taxonomie-konforme Planung" data-en="EU Taxonomy-compliant planning">EU-Taxonomie-konforme Planung</li>
+        </ul>
+        <div style="margin-top: var(--space-m);">
+          <a href="Projekte/projekt-biocampus-straubing.html" class="cta">
+            <span data-de="Zum Projekt" data-en="View Project">Zum Projekt</span>
+            <span class="cta__arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- STANDARDS & ZERTIFIZIERUNGEN -->
+    <section class="section fade-in" id="standards" style="background: var(--surface);">
+      <span class="section-label" data-de="Standards" data-en="Standards">Standards</span>
+      <h2 class="section-title" data-de="Standards &amp; Zertifizierungen" data-en="Standards &amp; Certifications">Standards &amp; Zertifizierungen</h2>
+
+      <div style="max-width: 760px;">
+        <p data-de="Unsere Planungsarbeit orientiert sich an relevanten nationalen und europäischen Standards. Wir integrieren diese Anforderungen von Beginn an in den Planungsprozess und unterstützen unsere Bauherren bei der Erreichung ihrer Nachhaltigkeitsziele." data-en="Our planning work is guided by relevant national and European standards. We integrate these requirements from the start of the planning process and support our clients in achieving their sustainability goals.">Unsere Planungsarbeit orientiert sich an relevanten nationalen und europäischen Standards. Wir integrieren diese Anforderungen von Beginn an in den Planungsprozess und unterstützen unsere Bauherren bei der Erreichung ihrer Nachhaltigkeitsziele.</p>
+
+        <div class="standards-strip">
+          <span class="standard-badge">DGNB</span>
+          <span class="standard-badge">GEG</span>
+          <span class="standard-badge">EU-Taxonomie</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section fade-in">
+      <div class="nachh-cta">
+        <h2 data-de="Nachhaltigkeit konkret gedacht. Projekte konkret umgesetzt." data-en="Sustainability concretely thought. Projects concretely realised.">Nachhaltigkeit konkret gedacht. Projekte konkret umgesetzt.</h2>
+        <div class="cta-group">
+          <a href="projekte.html" class="cta">
+            <span data-de="Mehr zu unseren Projekten" data-en="More on our projects">Mehr zu unseren Projekten</span>
+            <span class="cta__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="index.html#kontakt" class="cta">
+            <span data-de="Kontakt aufnehmen" data-en="Get in touch">Kontakt aufnehmen</span>
+            <span class="cta__arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="media/logo-sps-ibr.jpg" alt="SPS-IBR" height="30">
+        <p class="footer-brand__tagline" data-de="Vision trifft System" data-en="Vision meets System">Vision trifft System</p>
+        <div class="footer-brand__logos">
+          <a href="https://www.spacial-solutions.com" target="_blank" rel="noopener noreferrer" aria-label="Spacial Solutions"><img src="media/logo-spacial-solutions.jpg" alt="Spacial Solutions" height="24"></a>
+          <a href="https://www.ibrauscher.de" target="_blank" rel="noopener noreferrer" aria-label="Ingenieurbüro Rauscher"><img src="media/logo-ibrauscher.jpg" alt="Ingenieurbüro Rauscher" height="24"></a>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <div class="footer-nav__title" data-de="Navigation" data-en="Navigation">Navigation</div>
+        <ul class="footer-nav__list">
+          <li><a href="buero.html" class="footer-nav__link" data-de="Büro" data-en="Office">Büro</a></li>
+          <li><a href="index.html#aktuell" class="footer-nav__link" data-de="Aktuell" data-en="News">Aktuell</a></li>
+          <li><a href="nachhaltigkeit.html" class="footer-nav__link" data-de="Nachhaltigkeit" data-en="Sustainability">Nachhaltigkeit</a></li>
+          <li><a href="projekte.html" class="footer-nav__link" data-de="Projekte" data-en="Projects">Projekte</a></li>
+          <li><a href="index.html#kontakt" class="footer-nav__link" data-de="Kontakt" data-en="Contact">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <div class="footer-contact__title" data-de="Kontakt" data-en="Contact">Kontakt</div>
+        <address>
+          <p class="footer-contact__line">Brienner Strasse 46</p>
+          <p class="footer-contact__line">80333 München</p>
+          <p class="footer-contact__line"><a href="tel:+4989547265910">+49 89 5472659 10</a></p>
+          <p class="footer-contact__line"><a href="mailto:info@spacial-solutions.com">info@spacial-solutions.com</a></p>
+        </address>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <span>© <span class="footer-year">2026</span> SPS-IBR</span>
+      <span class="pipe" aria-hidden="true">|</span>
+      <a href="impressum.html" data-de="Impressum" data-en="Legal Notice">Impressum</a>
+      <span class="pipe" aria-hidden="true">|</span>
+      <a href="datenschutz.html" data-de="Datenschutz" data-en="Privacy Policy">Datenschutz</a>
+    </div>
+  </footer>
+
+  <script src="js/lang.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Sticky section nav — highlight active section
+    (function() {
+      const links = document.querySelectorAll('.section-nav__link');
+      const sections = Array.from(links).map(l => document.querySelector(l.getAttribute('href')));
+
+      function onScroll() {
+        const scrollY = window.scrollY + 160;
+        let active = 0;
+        sections.forEach((s, i) => {
+          if (s && s.offsetTop <= scrollY) active = i;
+        });
+        links.forEach((l, i) => l.classList.toggle('active', i === active));
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    })();
+  </script>
+</body>
+</html>

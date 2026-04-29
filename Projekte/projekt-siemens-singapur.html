@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firmenzentrale Siemens — SPS-IBR</title>
+  <meta name="description" content="Firmenzentrale Siemens — SPS-IBR Projekt. Singapur, SG.">
+  <meta property="og:title" content="Firmenzentrale Siemens — SPS-IBR">
+  <meta property="og:description" content="Firmenzentrale Siemens — SPS-IBR Projekt. Singapur, SG.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://www.sps-ibr.com/projekt-siemens-singapur.html">
+  <link rel="icon" href="../favicon.ico">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    /* Project Detail Page Layout */
+    .projekt-detail-layout {
+      display: grid;
+      grid-template-columns: 65fr 35fr;
+      gap: 0;
+      min-height: calc(100vh - 72px);
+      align-items: start;
+      margin-top: 72px;
+    }
+    .projekt-detail-gallery {
+      position: sticky;
+      top: 72px;
+      max-height: calc(100vh - 72px);
+      overflow: hidden;
+    }
+    .projekt-detail-gallery .main-img {
+      width: 100%;
+      height: calc(100vh - 72px - 66px - 74px);
+      object-fit: cover;
+      display: block;
+      cursor: pointer;
+    }
+    .projekt-thumbnails {
+      display: flex;
+      gap: 6px;
+      padding: 8px;
+      background: #111;
+      overflow-x: auto;
+      scrollbar-width: thin;
+      height: 66px;
+    }
+    .projekt-thumbnails img {
+      width: 80px;
+      height: 50px;
+      object-fit: cover;
+      cursor: pointer;
+      opacity: 0.5;
+      transition: opacity 0.2s;
+      border: 2px solid transparent;
+      flex-shrink: 0;
+    }
+    .projekt-thumbnails img.active,
+    .projekt-thumbnails img:hover { opacity: 1; border-color: #fff; }
+    .slider-controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 16px;
+      background: rgba(0,0,0,0.85);
+      height: 44px;
+    }
+    .slider-btn {
+      background: none;
+      border: 1px solid rgba(255,255,255,0.3);
+      color: #fff;
+      padding: 5px 14px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: border-color 0.2s;
+      font-family: inherit;
+    }
+    .slider-btn:hover { border-color: #fff; }
+    .slider-counter { color: rgba(255,255,255,0.5); font-size: 0.75rem; letter-spacing: 0.1em; }
+    .projekt-detail-info {
+      padding: 48px 40px;
+      position: sticky;
+      top: 72px;
+      max-height: calc(100vh - 72px);
+      overflow-y: auto;
+      scrollbar-width: thin;
+    }
+    .projekt-detail-tag {
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #8DC21F;
+      margin-bottom: 12px;
+    }
+    .projekt-detail-title {
+      font-size: clamp(1.3rem, 2.2vw, 1.9rem);
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 6px;
+      color: #E8E8E8;
+    }
+    .projekt-detail-subtitle {
+      font-size: 0.85rem;
+      color: #888;
+      margin-bottom: 28px;
+    }
+    .projekt-detail-desc { font-size: 0.875rem; line-height: 1.85; color: #888; margin-bottom: 28px; }
+    .projekt-detail-desc p + p { margin-top: 12px; }
+    .projekt-facts { border-top: 1px solid #2A2A2A; padding-top: 20px; margin-bottom: 28px; }
+    .projekt-fact { display: grid; grid-template-columns: 110px 1fr; gap: 6px; padding: 9px 0; border-bottom: 1px solid #2A2A2A; font-size: 0.82rem; }
+    .projekt-fact__label { color: #888; text-transform: uppercase; font-size: 0.65rem; letter-spacing: 0.08em; padding-top: 2px; }
+    .projekt-fact__value { color: #E8E8E8; font-weight: 500; }
+    .projekt-detail-back { margin-top: 20px; }
+    @media (max-width: 900px) {
+      .projekt-detail-layout { grid-template-columns: 1fr; margin-top: 72px; }
+      .projekt-detail-gallery { position: relative; top: 0; max-height: none; }
+      .projekt-detail-gallery .main-img { height: 55vw; }
+      .projekt-detail-info { position: relative; top: 0; max-height: none; padding: 28px 20px; }
+    }
+  </style>
+
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link" data-de="Zum Inhalt springen" data-en="Skip to content">Zum Inhalt springen</a>
+
+  <header class="site-header" role="banner">
+    <div class="header-logo">
+      <a href="../index.html" aria-label="SPS-IBR — Zur Startseite">
+        <img src="../media/logo-sps-ibr.jpg" alt="SPS-IBR Logo" width="140" height="36">
+      </a>
+    </div>
+        <nav class="main-nav" aria-label="Hauptnavigation">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="../buero.html" class="main-nav__link" data-de="Büro" data-en="Office">Büro</a></li>
+        <li class="main-nav__item"><span class="pipe" aria-hidden="true">|</span></li>
+        <li class="main-nav__item"><a href="../index.html#aktuell" class="main-nav__link" data-de="Aktuell" data-en="News">Aktuell</a></li>
+        <li class="main-nav__item"><span class="pipe" aria-hidden="true">|</span></li>
+        <li class="main-nav__item"><a href="../nachhaltigkeit.html" class="main-nav__link" data-de="Nachhaltigkeit" data-en="Sustainability">Nachhaltigkeit</a></li>
+        <li class="main-nav__item"><span class="pipe" aria-hidden="true">|</span></li>
+        <li class="main-nav__item"><a href="../projekte.html" class="main-nav__link" data-de="Projekte" data-en="Projects">Projekte</a></li>
+        <li class="main-nav__item"><span class="pipe" aria-hidden="true">|</span></li>
+        <li class="main-nav__item"><a href="../index.html#kontakt" class="main-nav__link" data-de="Kontakt" data-en="Contact">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div class="lang-toggle desktop-only">
+      <button class="lang-toggle__btn" data-lang="de" aria-pressed="true">DE</button>
+      <span class="lang-toggle__sep">/</span>
+      <button class="lang-toggle__btn" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <button class="hamburger" aria-expanded="false" aria-controls="mobile-nav" aria-label="Menü öffnen">
+      <span class="hamburger__line"></span>
+      <span class="hamburger__line"></span>
+      <span class="hamburger__line"></span>
+    </button>
+  </header>
+
+    <div class="mobile-nav" id="mobile-nav" role="dialog" aria-modal="true" aria-label="Navigation">
+    <a href="../buero.html" class="mobile-nav__link" data-de="Büro" data-en="Office">Büro</a>
+    <a href="../index.html#aktuell" class="mobile-nav__link" data-de="Aktuell" data-en="News">Aktuell</a>
+    <a href="../nachhaltigkeit.html" class="mobile-nav__link" data-de="Nachhaltigkeit" data-en="Sustainability">Nachhaltigkeit</a>
+    <a href="../projekte.html" class="mobile-nav__link" data-de="Projekte" data-en="Projects">Projekte</a>
+    <a href="../index.html#kontakt" class="mobile-nav__link" data-de="Kontakt" data-en="Contact">Kontakt</a>
+    <div class="lang-toggle">
+      <button class="lang-toggle__btn" data-lang="de" aria-pressed="true">DE</button>
+      <span class="lang-toggle__sep">/</span>
+      <button class="lang-toggle__btn" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+  <!-- TWO-COLUMN PROJECT DETAIL -->
+  <section class="projekt-detail-layout">
+
+    <!-- LEFT: IMAGE GALLERY -->
+    <div class="projekt-detail-gallery">
+      <img id="main-project-img" class="main-img" src="../media/portfolio/siemens-singapur/cover.jpg" alt="Firmenzentrale Siemens" loading="eager">
+      <div class="slider-controls">
+        <button class="slider-btn" id="prev-img" aria-label="Vorheriges Bild">←</button>
+        <span class="slider-counter" id="img-counter">1 / 5</span>
+        <button class="slider-btn" id="next-img" aria-label="Nächstes Bild">→</button>
+      </div>
+      <div class="projekt-thumbnails" id="thumbnails">
+                <img src="../media/portfolio/siemens-singapur/cover.jpg" class="active" alt="Firmenzentrale Siemens — 1">
+        <img src="../media/portfolio/siemens-singapur/01.jpg" alt="Firmenzentrale Siemens — 2">
+        <img src="../media/portfolio/siemens-singapur/02.jpg" alt="Firmenzentrale Siemens — 3">
+        <img src="../media/portfolio/siemens-singapur/03.jpg" alt="Firmenzentrale Siemens — 4">
+        <img src="../media/portfolio/siemens-singapur/04.jpg" alt="Firmenzentrale Siemens — 5">
+      </div>
+    </div>
+
+    <!-- RIGHT: PROJECT INFO -->
+    <div class="projekt-detail-info">
+      <div class="projekt-detail-tag" data-de="Büro &amp; Industrie" data-en="Office &amp; Industry">Büro &amp; Industrie</div>
+      <h1 class="projekt-detail-title">Firmenzentrale Siemens</h1>
+      <p class="projekt-detail-subtitle">Singapur, SG</p>
+
+      <div class="projekt-detail-desc">
+        <p>Entstandenmit Siemens Industrial Buildings Consultants (SIBC)</p>
+      </div>
+
+      <div class="projekt-facts">
+      </div>
+
+      <div class="projekt-detail-back">
+        <a href="../projekte.html" class="cta">
+          <span data-de="← Alle Projekte" data-en="← All Projects">← Alle Projekte</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+  <script>
+(function() {
+  var images = ["../media/portfolio/siemens-singapur/cover.jpg", "../media/portfolio/siemens-singapur/01.jpg", "../media/portfolio/siemens-singapur/02.jpg", "../media/portfolio/siemens-singapur/03.jpg", "../media/portfolio/siemens-singapur/04.jpg"];
+  var current = 0;
+  var mainImg = document.getElementById('main-project-img');
+  var counter = document.getElementById('img-counter');
+  var thumbs = document.querySelectorAll('#thumbnails img');
+  if (!mainImg || images.length === 0) return;
+  function show(idx) {
+    current = (idx + images.length) % images.length;
+    mainImg.src = images[current];
+    if (counter) counter.textContent = (current + 1) + ' / ' + images.length;
+    thumbs.forEach(function(t, i) { t.classList.toggle('active', i === current); });
+  }
+  var prev = document.getElementById('prev-img');
+  var next = document.getElementById('next-img');
+  if (prev) prev.addEventListener('click', function() { show(current - 1); });
+  if (next) next.addEventListener('click', function() { show(current + 1); });
+  thumbs.forEach(function(t, i) { t.addEventListener('click', function() { show(i); }); });
+  if (images.length > 1) setInterval(function() { show(current + 1); }, 6000);
+  show(0);
+})();
+</script>
+
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="../media/logo-sps-ibr.jpg" alt="SPS-IBR" height="30">
+        <p class="footer-brand__tagline" data-de="Vision trifft System" data-en="Vision meets System">Vision trifft System</p>
+        <div class="footer-brand__logos">
+          <a href="https://www.spacial-solutions.com" target="_blank" rel="noopener noreferrer" aria-label="Spacial Solutions"><img src="../media/logo-spacial-solutions.jpg" alt="Spacial Solutions" height="24"></a>
+          <a href="https://www.ibrauscher.de" target="_blank" rel="noopener noreferrer" aria-label="Ingenieurbüro Rauscher"><img src="../media/logo-ibrauscher.jpg" alt="Ingenieurbüro Rauscher" height="24"></a>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <div class="footer-nav__title" data-de="Navigation" data-en="Navigation">Navigation</div>
+        <ul class="footer-nav__list">
+          <li><a href="../buero.html" class="footer-nav__link" data-de="Büro" data-en="Office">Büro</a></li>
+          <li><a href="../projekte.html" class="footer-nav__link" data-de="Projekte" data-en="Projects">Projekte</a></li>
+          <li><a href="../index.html#nachhaltigkeit-teaser" class="footer-nav__link" data-de="Nachhaltigkeit" data-en="Sustainability">Nachhaltigkeit</a></li>
+          <li><a href="../index.html#kontakt" class="footer-nav__link" data-de="Kontakt" data-en="Contact">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <div class="footer-contact__title" data-de="Kontakt" data-en="Contact">Kontakt</div>
+        <address>
+          <p class="footer-contact__line">Brienner Strasse 46</p>
+          <p class="footer-contact__line">80333 München</p>
+          <p class="footer-contact__line"><a href="tel:+4989547265910">+49 89 5472659 10</a></p>
+          <p class="footer-contact__line"><a href="mailto:info@spacial-solutions.com">info@spacial-solutions.com</a></p>
+        </address>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <span>© <span class="footer-year">2026</span> SPS-IBR</span>
+      <span class="pipe" aria-hidden="true">|</span>
+      <a href="../impressum.html" data-de="Impressum" data-en="Legal Notice">Impressum</a>
+      <span class="pipe" aria-hidden="true">|</span>
+      <a href="../datenschutz.html" data-de="Datenschutz" data-en="Privacy Policy">Datenschutz</a>
+    </div>
+  </footer>
+
+  <script src="../js/lang.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

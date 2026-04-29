@@ -1,0 +1,89 @@
+{
+  "project": {
+    "id": "abensbergerstrasse",
+    "title": {
+      "en": "Abensberger Straße, Mainburg",
+      "de": "Abensberger Straße, Mainburg"
+    },
+    "subtitle": {
+      "en": "Mixed-Use Development with Integrated Heritage and Energy Strategy",
+      "de": "Mischnutzung mit Bestandsintegration und zukunftsorientiertem Energiekonzept"
+    },
+    "location": {
+      "city": "Mainburg",
+      "country": "Germany"
+    },
+    "status": {
+      "en": "Concept Design (LP2)",
+      "de": "Leistungsphase 2 – Konzeptplanung"
+    },
+    "client": {
+      "en": "Private",
+      "de": "Privat"
+    },
+    "services": {
+      "en": [
+        "Architecture",
+        "BIM Coordination",
+        "Concept Development"
+      ],
+      "de": [
+        "Architektur",
+        "BIM-Koordination",
+        "Konzeptentwicklung"
+      ]
+    },
+    "description": {
+      "en": {
+        "intro": "The Abensberger Straße project transforms an existing site in Mainburg into a forward-looking mixed-use development, combining commercial, office, residential, and hospitality functions.",
+        "body": [
+          "At the core of the concept is the integration of the historic brick building (“Haus Andreas”), reinterpreted as a gastronomic anchor with strong identity.",
+          "New building volumes wrap around the existing structure, creating a coherent architectural language between old and new.",
+          "The ground floor is designed as a commercial showroom, while upper floors accommodate flexible office spaces and compact residential units for temporary living.",
+          "A wellness and retreat area is planned at the top level, expanding the functional diversity of the building."
+        ],
+        "sustainability": [
+          "The project is driven by long-term sustainability and energy independence.",
+          "Photovoltaic systems on roof and façade surfaces are integrated into the design.",
+          "Innovative energy concepts such as thermal long-term storage and alternative systems are considered in early planning stages.",
+          "Passive strategies and optimized geometry support overall energy performance."
+        ],
+        "technical": [
+          "An underground level provides parking and technical infrastructure.",
+          "Groundwater conditions require an elevated ground floor level, influencing access and spatial design.",
+          "Spatial and economic efficiency are balanced in the underground layout."
+        ],
+        "closing": "The project results in a resilient and adaptable building system combining architectural clarity, engineering precision, and sustainable thinking."
+      },
+      "de": {
+        "intro": "Das Projekt Abensberger Straße transformiert ein bestehendes Grundstück in Mainburg zu einem zukunftsfähigen Mischnutzungskonzept mit Gewerbe, Büro, Wohnen und Gastronomie.",
+        "body": [
+          "Zentrales Element ist die Integration des historischen Ziegelgebäudes („Haus Andreas“), das als gastronomischer Anker neu interpretiert wird.",
+          "Die Neubauvolumen umschließen den Bestand und schaffen eine klare architektonische Verbindung zwischen Alt und Neu.",
+          "Im Erdgeschoss entstehen Gewerbe- und Ausstellungsflächen, während die Obergeschosse flexible Büroflächen und kompakte Wohneinheiten aufnehmen.",
+          "Im Dachbereich ist ein Wellness- und Rückzugsbereich vorgesehen."
+        ],
+        "sustainability": [
+          "Das Projekt verfolgt eine konsequent nachhaltige und zukunftsorientierte Strategie.",
+          "Photovoltaik auf Dach- und Fassadenflächen wird integrativ geplant.",
+          "Innovative Energiesysteme wie thermische Langzeitspeicher werden bereits in der Konzeptphase berücksichtigt.",
+          "Passive Maßnahmen und optimierte Geometrie verbessern die Gesamtenergieeffizienz."
+        ],
+        "technical": [
+          "Eine Tiefgarage dient der Unterbringung von Stellplätzen und technischer Infrastruktur.",
+          "Aufgrund von Grundwasserbedingungen wird das Gebäude angehoben, was die Erschließung beeinflusst.",
+          "Funktionale und wirtschaftliche Aspekte werden im Untergeschoss optimiert."
+        ],
+        "closing": "Das Ergebnis ist ein robustes und anpassungsfähiges Gebäude, das architektonische Klarheit, ingenieurtechnische Präzision und Nachhaltigkeit vereint."
+      }
+    },
+    "tags": [
+      "Mixed-Use",
+      "Sustainability",
+      "Adaptive Reuse",
+      "BIM",
+      "Energy Concept",
+      "Industrial Architecture"
+    ]
+  }
+}

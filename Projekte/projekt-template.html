@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- REPLACE: project-title -->
+  <title>[Projektname] — SPS-IBR</title>
+  <meta name="description" content="[Projektname] — SPS-IBR Projekt.">
+  <meta property="og:title" content="[Projektname] — SPS-IBR">
+  <meta property="og:description" content="[Projektname] — SPS-IBR Projekt.">
+  <meta property="og:type" content="website">
+  <!-- REPLACE: project-slug -->
+  <link rel="canonical" href="https://www.sps-ibr.com/projekt-[slug].html">
+  <link rel="icon" href="../favicon.ico">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link" data-de="Zum Inhalt springen" data-en="Skip to content">Zum Inhalt springen</a>
+
+  <!-- HEADER (identical across all pages) -->
+  <header class="site-header" role="banner">
+    <div class="header-logo">
+      <a href="../index.html" aria-label="SPS-IBR — Zur Startseite">
+        <img src="../media/logo-sps-ibr.jpg" alt="SPS-IBR Logo" width="140" height="36">
+      </a>
+    </div>
+        <nav class="main-nav" aria-label="Hauptnavigation">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="../buero.html" class="main-nav__link" data-de="Büro" data-en="Office">Büro</a></li>
+        <li class="main-nav__item"><span class="pipe" aria-hidden="true">|</span></li>
+        <li class="main-nav__item"><a href="../index.html#aktuell" class="main-nav__link" data-de="Aktuell" data-en="News">Aktuell</a></li>
+        <li class="main-nav__item"><span class="pipe" aria-hidden="true">|</span></li>
+        <li class="main-nav__item"><a href="../nachhaltigkeit.html" class="main-nav__link" data-de="Nachhaltigkeit" data-en="Sustainability">Nachhaltigkeit</a></li>
+        <li class="main-nav__item"><span class="pipe" aria-hidden="true">|</span></li>
+        <li class="main-nav__item"><a href="../projekte.html" class="main-nav__link" data-de="Projekte" data-en="Projects">Projekte</a></li>
+        <li class="main-nav__item"><span class="pipe" aria-hidden="true">|</span></li>
+        <li class="main-nav__item"><a href="../index.html#kontakt" class="main-nav__link" data-de="Kontakt" data-en="Contact">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div class="lang-toggle desktop-only">
+      <button class="lang-toggle__btn" data-lang="de" aria-pressed="true">DE</button>
+      <span class="lang-toggle__sep">/</span>
+      <button class="lang-toggle__btn" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <button class="hamburger" aria-expanded="false" aria-controls="mobile-nav" aria-label="Menü öffnen">
+      <span class="hamburger__line"></span>
+      <span class="hamburger__line"></span>
+      <span class="hamburger__line"></span>
+    </button>
+  </header>
+
+    <div class="mobile-nav" id="mobile-nav" role="dialog" aria-modal="true" aria-label="Navigation">
+    <a href="../buero.html" class="mobile-nav__link" data-de="Büro" data-en="Office">Büro</a>
+    <a href="../index.html#aktuell" class="mobile-nav__link" data-de="Aktuell" data-en="News">Aktuell</a>
+    <a href="../nachhaltigkeit.html" class="mobile-nav__link" data-de="Nachhaltigkeit" data-en="Sustainability">Nachhaltigkeit</a>
+    <a href="../projekte.html" class="mobile-nav__link" data-de="Projekte" data-en="Projects">Projekte</a>
+    <a href="../index.html#kontakt" class="mobile-nav__link" data-de="Kontakt" data-en="Contact">Kontakt</a>
+    <div class="lang-toggle">
+      <button class="lang-toggle__btn" data-lang="de" aria-pressed="true">DE</button>
+      <span class="lang-toggle__sep">/</span>
+      <button class="lang-toggle__btn" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- PAGE HERO with project cover -->
+    <section class="hero-page">
+      <div class="hero-page__bg">
+        <!-- REPLACE: project-cover-image -->
+        <img src="../media/portfolio/[slug]/cover.jpg" alt="[Projektname]" loading="eager">
+      </div>
+      <div class="hero-page__content">
+        <!-- REPLACE: project-category -->
+        <span class="section-label">[Kategorie]</span>
+        <!-- REPLACE: project-title -->
+        <h1>[Projektname]</h1>
+      </div>
+    </section>
+
+    <!-- SLIDESHOW -->
+    <section class="section" style="padding-top: var(--space-l); padding-bottom: var(--space-l);">
+      <!-- REPLACE: project-slideshow-images -->
+      <div class="slideshow" aria-label="Projektbilder">
+        <div class="slideshow__track">
+          <!-- REPLACE: slides — one .slideshow__slide per image -->
+          <div class="slideshow__slide">
+            <img src="../media/portfolio/[slug]/cover.jpg" alt="[Projektname] — Bild 1" loading="lazy">
+          </div>
+        </div>
+        <div class="slideshow__controls">
+          <button class="slideshow__btn slideshow__prev" aria-label="Vorheriges Bild">←</button>
+          <div class="slideshow__dots"></div>
+          <button class="slideshow__btn slideshow__next" aria-label="Nächstes Bild">→</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT METADATA -->
+    <section class="section" style="padding-top: 0;">
+      <div class="projekt-meta">
+        <!-- REPLACE: project-title -->
+        <span class="projekt-meta__label" data-de="Projekt" data-en="Project">Projekt</span>
+        <span class="projekt-meta__value">[Projektname]</span>
+
+        <!-- REPLACE: project-category -->
+        <span class="projekt-meta__label" data-de="Kategorie" data-en="Category">Kategorie</span>
+        <span class="projekt-meta__value">[Kategorie]</span>
+
+        <!-- REPLACE: project-location -->
+        <span class="projekt-meta__label" data-de="Standort" data-en="Location">Standort</span>
+        <span class="projekt-meta__value">[Standort]</span>
+
+        <!-- REPLACE: project-year -->
+        <span class="projekt-meta__label" data-de="Jahr" data-en="Year">Jahr</span>
+        <span class="projekt-meta__value"><!-- PLACEHOLDER: year --></span>
+
+        <!-- REPLACE: project-client -->
+        <span class="projekt-meta__label" data-de="Auftraggeber" data-en="Client">Auftraggeber</span>
+        <span class="projekt-meta__value"><!-- PLACEHOLDER: client --></span>
+      </div>
+
+      <!-- REPLACE: project-description -->
+      <div class="projekt-description">
+        <p>[Projektbeschreibung]</p>
+      </div>
+
+      <div class="projekt-back">
+        <a href="../projekte.html" class="cta">
+          <span data-de="← Zurück zu allen Projekten" data-en="← Back to all projects">← Zurück zu allen Projekten</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER (identical across all pages) -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="../media/logo-sps-ibr.jpg" alt="SPS-IBR" height="30">
+        <p class="footer-brand__tagline" data-de="Vision trifft System" data-en="Vision meets System">Vision trifft System</p>
+        <div class="footer-brand__logos">
+          <a href="https://www.spacial-solutions.com" target="_blank" rel="noopener noreferrer" aria-label="Spacial Solutions"><img src="../media/logo-spacial-solutions.jpg" alt="Spacial Solutions" height="24"></a>
+          <a href="https://www.ibrauscher.de" target="_blank" rel="noopener noreferrer" aria-label="Ingenieurbüro Rauscher"><img src="../media/logo-ibrauscher.jpg" alt="Ingenieurbüro Rauscher" height="24"></a>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <div class="footer-nav__title" data-de="Navigation" data-en="Navigation">Navigation</div>
+        <ul class="footer-nav__list">
+          <li><a href="../buero.html" class="footer-nav__link" data-de="Büro" data-en="Office">Büro</a></li>
+          <li><a href="../projekte.html" class="footer-nav__link" data-de="Projekte" data-en="Projects">Projekte</a></li>
+          <li><a href="../index.html#nachhaltigkeit-teaser" class="footer-nav__link" data-de="Nachhaltigkeit" data-en="Sustainability">Nachhaltigkeit</a></li>
+          <li><a href="../index.html#kontakt" class="footer-nav__link" data-de="Kontakt" data-en="Contact">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <div class="footer-contact__title" data-de="Kontakt" data-en="Contact">Kontakt</div>
+        <address>
+          <p class="footer-contact__line">Brienner Strasse 46</p>
+          <p class="footer-contact__line">80333 München</p>
+          <p class="footer-contact__line"><a href="tel:+4989547265910">+49 89 5472659 10</a></p>
+          <p class="footer-contact__line"><a href="mailto:info@spacial-solutions.com">info@spacial-solutions.com</a></p>
+        </address>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <span>© <span class="footer-year">2026</span> SPS-IBR</span>
+      <span class="pipe" aria-hidden="true">|</span>
+      <a href="../impressum.html" data-de="Impressum" data-en="Legal Notice">Impressum</a>
+      <span class="pipe" aria-hidden="true">|</span>
+      <a href="../datenschutz.html" data-de="Datenschutz" data-en="Privacy Policy">Datenschutz</a>
+    </div>
+  </footer>
+
+  <script src="../js/lang.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/slideshow.js"></script>
+</body>
+</html>

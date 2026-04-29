@@ -1,0 +1,45 @@
+# Referenzen (Auswahl)
+
+- Alfred Scholpp GmbH+Co KG, Stuttgart
+- Andreas Stihl AG & Co.KG, Qingdao
+- Andreas Stihl AG & Co.KG, Waiblingen
+- Aladdin Investments, Monaco
+- Argo Personal Service GmbH, Hamburg
+- AROBA Properties Ltd., Abu Dhabi
+- BHB Bauträger GmbH Bayern, Grünwald / München
+- Crescentt Hydropolis, Dubai
+- Deutsche Immobilien Fonds AG, Hamburg
+- Drees & Sommer AG, Stuttgart
+- Ernst & Young AG, Stuttgart
+- Ernst & Young AG, München
+- Françoise Heitsch, München
+- Friedrich Oesterle, Tübingen
+- GWG-Wohnungsgesellschaft mbH, Reutlingen
+- IBV GmbH, Tübingen
+
+- Infineon Technologies AG, München
+- Infineon Technologies Austria AG, Villach
+- Infineon Technologies S.R.O., Prag
+- Landeshauptstadt München, München
+- Michael und Jutta Münch, München
+- MKM Römerkastell GmbH, Stuttgart
+- Private Sector Federation, Kigali
+- PSE Management Consultancy, Hamburg
+- RIEPA, Kigali
+- RREEF Investment GmbH, Eschborn
+- Siegle & Epple GmbH & Co.KG, Stuttgart
+- Siemens AG, Stuttgart
+- Siemens LLC, Moskau
+- Siemens LLC, Dubai
+- Siemens LTD, Mumbai
+- Siemens Nederland N.V., The Hague
+
+- Siemens Pte Ltd, Singapore
+- Siemens S.A., Buenos Aires
+- Siemens S.A., Lissabon
+- Siemens S.A.E., Kairo
+- Stadt Baden Baden, Baden-Baden
+- Top-Bauträger GmbH, Villingen-Schwenningen
+- Tri-Star Investments S.A.R.L., Kigali
+- Tritel Inc., Marrakesch
+- Ultimate Concepts Ltd., Kigali

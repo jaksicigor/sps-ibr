@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPS-IBR | Vision trifft System</title>
+  <meta name="description" content="SPS-IBR — Architektur- und Ingenieurbüro in München. Integrierte Planung von Projektentwicklung bis Realisierung.">
+  <meta property="og:title" content="SPS-IBR | Vision trifft System">
+  <meta property="og:description" content="SPS-IBR — Architektur- und Ingenieurbüro in München. Integrierte Planung von Projektentwicklung bis Realisierung.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://www.sps-ibr.com/">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-home">
+
+  <a href="#main-content" class="skip-link" data-de="Zum Inhalt springen" data-en="Skip to content">Zum Inhalt springen</a>
+
+  <!-- ============================================================
+       HEADER
+       ============================================================ -->
+  <header class="site-header" role="banner">
+    <div class="header-logo">
+      <a href="index.html" aria-label="SPS-IBR — Zur Startseite">
+        <img src="media/logo-sps-ibr.jpg" alt="SPS-IBR Logo" width="140" height="36">
+      </a>
+    </div>
+
+    <nav class="main-nav" aria-label="Hauptnavigation">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="buero.html" class="main-nav__link" data-de="Büro" data-en="Office">Büro</a>
+        </li>
+        <li class="main-nav__item"><span class="pipe" aria-hidden="true">|</span></li>
+        <li class="main-nav__item">
+          <a href="#aktuell" class="main-nav__link" data-de="Aktuell" data-en="News">Aktuell</a>
+        </li>
+        <li class="main-nav__item"><span class="pipe" aria-hidden="true">|</span></li>
+        <li class="main-nav__item">
+          <a href="nachhaltigkeit.html" class="main-nav__link" data-de="Nachhaltigkeit" data-en="Sustainability">Nachhaltigkeit</a>
+        </li>
+        <li class="main-nav__item"><span class="pipe" aria-hidden="true">|</span></li>
+        <li class="main-nav__item">
+          <a href="projekte.html" class="main-nav__link" data-de="Projekte" data-en="Projects">Projekte</a>
+        </li>
+        <li class="main-nav__item"><span class="pipe" aria-hidden="true">|</span></li>
+        <li class="main-nav__item">
+          <a href="#kontakt" class="main-nav__link" data-de="Kontakt" data-en="Contact">Kontakt</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="lang-toggle desktop-only">
+      <button class="lang-toggle__btn" data-lang="de" aria-pressed="true">DE</button>
+      <span class="lang-toggle__sep">/</span>
+      <button class="lang-toggle__btn" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+
+    <button class="hamburger" aria-expanded="false" aria-controls="mobile-nav" aria-label="Menü öffnen">
+      <span class="hamburger__line"></span>
+      <span class="hamburger__line"></span>
+      <span class="hamburger__line"></span>
+    </button>
+  </header>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-nav" id="mobile-nav" role="dialog" aria-modal="true" aria-label="Navigation">
+    <a href="buero.html" class="mobile-nav__link" data-de="Büro" data-en="Office">Büro</a>
+    <a href="#aktuell" class="mobile-nav__link" data-de="Aktuell" data-en="News">Aktuell</a>
+    <a href="nachhaltigkeit.html" class="mobile-nav__link" data-de="Nachhaltigkeit" data-en="Sustainability">Nachhaltigkeit</a>
+    <a href="projekte.html" class="mobile-nav__link" data-de="Projekte" data-en="Projects">Projekte</a>
+    <a href="#kontakt" class="mobile-nav__link" data-de="Kontakt" data-en="Contact">Kontakt</a>
+    <div class="lang-toggle">
+      <button class="lang-toggle__btn" data-lang="de" aria-pressed="true">DE</button>
+      <span class="lang-toggle__sep">/</span>
+      <button class="lang-toggle__btn" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       MAIN
+       ============================================================ -->
+  <main id="main-content">
+
+    <!-- HERO LANDING -->
+    <section class="hero-landing">
+      <div class="hero-landing__bg">
+        <img src="media/hero-background.png" alt="" loading="eager" width="1920" height="1080">
+      </div>
+      <div class="hero-landing__overlay"></div>
+
+      <div class="hero-landing__content">
+        <div class="hero-center-logo">
+          <img src="media/logo-sps-ibr.jpg" alt="SPS-IBR" class="hero-logo-img">
+        </div>
+
+        <p class="hero-landing__origin">
+          <span data-de="Spacial Solutions" data-en="Spacial Solutions">Spacial Solutions</span>
+          <span class="pipe" aria-hidden="true">|</span>
+          <span data-de="Ingenieurbüro Rauscher" data-en="Engineering Office Rauscher">Ingenieurbüro Rauscher</span>
+        </p>
+
+        <h1 class="hero-landing__headline"
+            data-de-html='Vision <span class="hero-t">t</span>riff<span class="hero-t">t</span> System'
+            data-en-html='Vision meets System'>
+          Vision <span class="hero-t">t</span>riff<span class="hero-t">t</span> System
+        </h1>
+
+        <p class="hero-landing__sub" data-de="Wir verbinden Vision, Architektur und Ingenieurwesen zu funktionierenden Systemen." data-en="We combine vision, architecture and engineering into functioning systems.">Wir verbinden Vision, Architektur und Ingenieurwesen zu funktionierenden Systemen.</p>
+
+        <div class="hero-landing__services">
+          <span class="service-item">
+            <a href="buero.html#leistung-projektentwicklung" class="service-link" data-de="Projektentwicklung" data-en="Project Development">Projektentwicklung</a>
+          </span>
+          <span class="pipe" aria-hidden="true">|</span>
+          <span class="service-item">
+            <a href="buero.html#leistung-masterplanung" class="service-link" data-de="Masterplanung" data-en="Masterplanning">Masterplanung</a>
+          </span>
+          <span class="pipe" aria-hidden="true">|</span>
+          <span class="service-item">
+            <a href="buero.html#leistung-architektur" class="service-link" data-de="Architektur" data-en="Architecture">Architektur</a>
+          </span>
+          <span class="pipe" aria-hidden="true">|</span>
+          <span class="service-item">
+            <a href="buero.html#leistung-generalplanung" class="service-link" data-de="Generalplanung" data-en="General Planning">Generalplanung</a>
+          </span>
+          <span class="pipe" aria-hidden="true">|</span>
+          <span class="service-item">
+            <a href="buero.html#leistung-projektmanagement" class="service-link" data-de="Projektmanagement" data-en="Project Management">Projektmanagement</a>
+          </span>
+          <span class="pipe" aria-hidden="true">|</span>
+          <span class="service-item">
+            <a href="buero.html#leistung-strategie-consulting" class="service-link" data-de="Strategie &amp; Consulting" data-en="Strategy &amp; Consulting">Strategie &amp; Consulting</a>
+          </span>
+          <span class="pipe" aria-hidden="true">|</span>
+          <span class="service-item">
+            <a href="buero.html#leistung-bestandsanalyse" class="service-link" data-de="Bestandsanalyse &amp; 3D-Laserscanning" data-en="Building Survey &amp; 3D Laser Scanning">Bestandsanalyse &amp; 3D-Laserscanning</a>
+          </span>
+        </div>
+      </div>
+
+      <div class="stats-bar">
+        <div class="stat-item">
+          <span class="stat-number">100+</span>
+          <span class="stat-label" data-de="realisierte Projekte" data-en="completed projects">realisierte Projekte</span>
+        </div>
+        <span class="pipe" aria-hidden="true">|</span>
+        <div class="stat-item">
+          <span class="stat-number">30+</span>
+          <span class="stat-label" data-de="Jahre Erfahrung" data-en="years of experience">Jahre Erfahrung</span>
+        </div>
+        <span class="pipe" aria-hidden="true">|</span>
+        <div class="stat-item">
+          <span class="stat-number">25+</span>
+          <span class="stat-label" data-de="Länder weltweit" data-en="countries worldwide">Länder weltweit</span>
+        </div>
+        <span class="pipe" aria-hidden="true">|</span>
+        <div class="stat-item">
+          <span class="stat-number">9</span>
+          <span class="stat-label" data-de="Auszeichnungen" data-en="Awards">Auszeichnungen</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- WER WIR SIND — rebalanced one-pager -->
+    <section class="section-ueber-uns fade-in" id="wer-wir-sind">
+      <div class="ueber-uns-accent" aria-hidden="true"></div>
+
+      <!-- Two-column: architectural visual left | content right -->
+      <div class="ueber-uns-main">
+
+        <!-- LEFT: High-end technical visual -->
+        <div class="ueber-uns-visual" aria-hidden="true">
+          <svg viewBox="0 0 480 600" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <pattern id="uu-grid" width="30" height="30" patternUnits="userSpaceOnUse">
+                <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="0.5"/>
+              </pattern>
+              <pattern id="uu-grid-major" width="150" height="150" patternUnits="userSpaceOnUse">
+                <path d="M 150 0 L 0 0 0 150" fill="none" stroke="rgba(255,255,255,0.065)" stroke-width="0.8"/>
+              </pattern>
+              <radialGradient id="uu-glow" cx="38%" cy="38%" r="58%">
+                <stop offset="0%" stop-color="rgba(141,194,31,0.11)"/>
+                <stop offset="100%" stop-color="rgba(141,194,31,0)"/>
+              </radialGradient>
+              <linearGradient id="uu-fade-r" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="55%" stop-color="rgba(0,0,0,0)"/>
+                <stop offset="100%" stop-color="rgba(15,15,15,1)"/>
+              </linearGradient>
+              <linearGradient id="uu-fade-b" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="75%" stop-color="rgba(0,0,0,0)"/>
+                <stop offset="100%" stop-color="rgba(15,15,15,0.9)"/>
+              </linearGradient>
+            </defs>
+
+            <!-- Grid layers -->
+            <rect width="480" height="600" fill="url(#uu-grid)"/>
+            <rect width="480" height="600" fill="url(#uu-grid-major)"/>
+            <!-- Ambient green glow -->
+            <ellipse cx="180" cy="220" rx="260" ry="240" fill="url(#uu-glow)"/>
+
+            <!-- Building facade elevation (right zone) -->
+            <rect x="295" y="75" width="155" height="340" fill="none" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+            <!-- Floor lines -->
+            <line x1="295" y1="135" x2="450" y2="135" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
+            <line x1="295" y1="195" x2="450" y2="195" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
+            <line x1="295" y1="255" x2="450" y2="255" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
+            <line x1="295" y1="315" x2="450" y2="315" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
+            <line x1="295" y1="375" x2="450" y2="375" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
+            <!-- Column verticals -->
+            <line x1="335" y1="75" x2="335" y2="415" stroke="rgba(255,255,255,0.04)" stroke-width="0.5"/>
+            <line x1="373" y1="75" x2="373" y2="415" stroke="rgba(255,255,255,0.04)" stroke-width="0.5"/>
+            <line x1="411" y1="75" x2="411" y2="415" stroke="rgba(255,255,255,0.04)" stroke-width="0.5"/>
+            <!-- Windows — floor 1 -->
+            <rect x="303" y="85" width="24" height="38" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="0.5"/>
+            <rect x="341" y="85" width="24" height="38" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="0.5"/>
+            <rect x="379" y="85" width="24" height="38" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="0.5"/>
+            <rect x="417" y="85" width="24" height="38" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="0.5"/>
+            <!-- Windows — floor 2 -->
+            <rect x="303" y="145" width="24" height="38" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+            <rect x="341" y="145" width="24" height="38" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+            <rect x="379" y="145" width="24" height="38" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+            <rect x="417" y="145" width="24" height="38" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+            <!-- Windows — floor 3 -->
+            <rect x="303" y="205" width="24" height="38" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
+            <rect x="341" y="205" width="24" height="38" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
+            <rect x="379" y="205" width="24" height="38" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
+
+            <!-- Floor plan sketch — lower left -->
+            <rect x="25" y="450" width="215" height="110" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="0.8"/>
+            <line x1="105" y1="450" x2="105" y2="560" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
+            <line x1="25" y1="505" x2="240" y2="505" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
+            <line x1="170" y1="450" x2="170" y2="505" stroke="rgba(255,255,255,0.04)" stroke-width="0.5"/>
+            <!-- Door arc -->
+            <path d="M 105 480 Q 128 480 128 503" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+            <line x1="105" y1="480" x2="128" y2="503" stroke="rgba(255,255,255,0.04)" stroke-width="0.5"/>
+
+            <!-- Data-flow paths (BIM-inspired) -->
+            <!-- Primary — strong green dashed -->
+            <path d="M 18 530 C 55 490 110 400 185 320 C 230 275 268 225 295 200" fill="none" stroke="rgba(141,194,31,0.5)" stroke-width="1.8" stroke-dasharray="6 3"/>
+            <!-- Secondary -->
+            <path d="M 18 430 C 70 410 130 370 195 345 C 240 328 270 315 295 310" fill="none" stroke="rgba(141,194,31,0.28)" stroke-width="1.1" stroke-dasharray="4 4"/>
+            <!-- Tertiary -->
+            <path d="M 35 310 C 95 292 155 258 220 238 C 260 226 280 218 295 215" fill="none" stroke="rgba(255,255,255,0.09)" stroke-width="0.8"/>
+            <!-- Horizontal link -->
+            <path d="M 45 165 C 100 160 180 163 240 165 C 268 166 284 167 295 168" fill="none" stroke="rgba(141,194,31,0.2)" stroke-width="1" stroke-dasharray="3 5"/>
+
+            <!-- Nodes — primary green -->
+            <circle cx="18" cy="530" r="5" fill="none" stroke="rgba(141,194,31,0.75)" stroke-width="1.5"/>
+            <circle cx="18" cy="530" r="2.5" fill="rgba(141,194,31,0.75)"/>
+            <circle cx="185" cy="320" r="4.5" fill="none" stroke="rgba(141,194,31,0.65)" stroke-width="1.5"/>
+            <circle cx="185" cy="320" r="2" fill="rgba(141,194,31,0.65)"/>
+            <circle cx="295" cy="200" r="3.5" fill="rgba(141,194,31,0.55)"/>
+            <!-- Secondary nodes -->
+            <circle cx="18" cy="430" r="3.5" fill="none" stroke="rgba(141,194,31,0.4)" stroke-width="1"/>
+            <circle cx="18" cy="430" r="1.5" fill="rgba(141,194,31,0.4)"/>
+            <circle cx="295" cy="310" r="2.5" fill="rgba(141,194,31,0.35)"/>
+            <!-- White nodes -->
+            <circle cx="35" cy="310" r="2.5" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="0.8"/>
+            <circle cx="45" cy="165" r="2" fill="rgba(255,255,255,0.15)"/>
+
+            <!-- Dimension markers -->
+            <line x1="272" y1="75" x2="272" y2="415" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+            <line x1="267" y1="75" x2="277" y2="75" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+            <line x1="267" y1="415" x2="277" y2="415" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+            <line x1="295" y1="440" x2="450" y2="440" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+            <line x1="295" y1="435" x2="295" y2="445" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+            <line x1="450" y1="435" x2="450" y2="445" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+
+            <!-- Edge fades -->
+            <rect width="480" height="600" fill="url(#uu-fade-r)"/>
+            <rect width="480" height="600" fill="url(#uu-fade-b)"/>
+
+            <!-- Top label -->
+            <text x="25" y="35" font-size="9" fill="rgba(255,255,255,0.10)" font-family="sans-serif" letter-spacing="4" font-weight="400">SPS | IBR</text>
+            <text x="25" y="48" font-size="6" fill="rgba(255,255,255,0.06)" font-family="sans-serif" letter-spacing="5">ARCHITEKTUR + INGENIEURWESEN</text>
+          </svg>
+        </div>
+
+        <!-- RIGHT: Content — Text → CTA → Origin logos -->
+        <div class="ueber-uns-content">
+          <div class="ueber-uns-header">
+            <span class="section-label" data-de="Über uns" data-en="About us">Über uns</span>
+            <h2 class="section-title" data-de="Wer wir sind" data-en="Who we are">Wer wir sind</h2>
+          </div>
+
+          <p class="ueber-uns-lead" data-de="SPS | IBR vereint die stadtplanerische und konzeptionelle Kompetenz von Spacial Solutions mit der Ingenieurdisziplin von Ingenieurbüro Rauscher. Gemeinsam decken wir den gesamten Planungsprozess aus einer Hand ab — von der ersten strategischen Idee bis zur technischen Realisierung." data-en="SPS | IBR combines the urban planning and conceptual expertise of Spacial Solutions with the engineering discipline of Ingenieurbüro Rauscher. Together we cover the entire planning process from a single source — from the first strategic idea to technical realisation.">SPS | IBR vereint die stadtplanerische und konzeptionelle Kompetenz von Spacial Solutions mit der Ingenieurdisziplin von Ingenieurbüro Rauscher. Gemeinsam decken wir den gesamten Planungsprozess aus einer Hand ab — von der ersten strategischen Idee bis zur technischen Realisierung.</p>
+
+          <p class="ueber-uns-body" data-de="Nachhaltigkeit und innovative Energiesysteme denken wir von Beginn an mit – für langfristig funktionierende und unabhängige Systeme." data-en="We integrate sustainability and innovative energy systems from the very beginning — for long-term, functioning and independent systems.">Nachhaltigkeit und innovative Energiesysteme denken wir von Beginn an mit – für langfristig funktionierende und unabhängige Systeme.</p>
+
+          <!-- CTA — directly below text -->
+          <div class="ueber-uns-cta">
+            <a href="buero.html" class="btn-cta-primary">
+              <span data-de="Mehr über uns erfahren" data-en="Learn more about us">Mehr über uns erfahren</span>
+              <span class="btn-cta-primary__arrow" aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          <!-- Origin logos -->
+          <div class="origin-compact">
+            <div class="origin-compact__item">
+              <span class="origin-logo-card__label">Spacial Solutions</span>
+              <a href="https://www.spacial-solutions.com" target="_blank" rel="noopener noreferrer" aria-label="Spacial Solutions">
+                <img src="media/logo-spacial-solutions.jpg" alt="Spacial Solutions Logo" height="38">
+              </a>
+              <a href="https://www.spacial-solutions.com" target="_blank" rel="noopener noreferrer" class="origin-logo-visit" data-de="Besuchen Sie uns →" data-en="Visit us →">Besuchen Sie uns →</a>
+            </div>
+            <div class="origin-compact__item">
+              <span class="origin-logo-card__label">Ingenieurbüro Rauscher</span>
+              <a href="https://www.ibrauscher.de" target="_blank" rel="noopener noreferrer" aria-label="Ingenieurbüro Rauscher">
+                <img src="media/logo-ibrauscher.jpg" alt="Ingenieurbüro Rauscher Logo" height="38">
+              </a>
+              <a href="https://www.ibrauscher.de" target="_blank" rel="noopener noreferrer" class="origin-logo-visit" data-de="Besuchen Sie uns →" data-en="Visit us →">Besuchen Sie uns →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AUSZEICHNUNGEN — structured strip -->
+      <div class="auszeichnungen-section">
+        <span class="auszeichnungen-label" data-de="Auszeichnungen" data-en="Awards">Auszeichnungen</span>
+        <div class="awards-grid auszeichnungen-grid">
+          <div class="award-item">
+            <img src="media/awards/csm_IconicAwards_Logo_ARCHITECTURE_Winner_s_f053548905.png" alt="Iconic Award Architecture Winner 2015">
+            <span class="award-item__year">2015</span>
+          </div>
+          <div class="award-item">
+            <img src="media/awards/csm_GermanDesignAward_Nominee2014_9ad831376d.jpg" alt="German Design Award Nominee 2014">
+            <span class="award-item__year">2014</span>
+          </div>
+          <div class="award-item">
+            <img src="media/awards/csm_IconicAwards_Logo_CONCEPT_Winner_s_efcc99e1dc.jpg" alt="Iconic Award Concept Winner 2013">
+            <span class="award-item__year">2013</span>
+          </div>
+          <div class="award-item">
+            <img src="media/awards/csm_African_Property_Awards_2009_be65701c60.jpg" alt="African Property Award 2009">
+            <span class="award-item__year">2009</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PARTNERS -->
+      <div class="partners-section">
+        <p class="ref-strip-label" data-de="Einige unserer Partner" data-en="Some of our partners">Einige unserer Partner</p>
+        <div class="ref-strip">
+          <span class="ref-strip__name">Siemens</span>
+          <span class="pipe" aria-hidden="true">|</span>
+          <span class="ref-strip__name">Drees &amp; Sommer</span>
+          <span class="pipe" aria-hidden="true">|</span>
+          <span class="ref-strip__name">Ernst &amp; Young</span>
+          <span class="pipe" aria-hidden="true">|</span>
+          <span class="ref-strip__name">STIHL</span>
+          <span class="pipe" aria-hidden="true">|</span>
+          <span class="ref-strip__name">Infineon</span>
+          <span class="pipe" aria-hidden="true">|</span>
+          <span class="ref-strip__name">BHB Bauträger</span>
+          <span class="pipe" aria-hidden="true">|</span>
+          <span class="ref-strip__name">Landeshauptstadt München</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- AKTUELL -->
+    <section class="section fade-in" id="aktuell" style="background: var(--surface);">
+      <span class="section-label" data-de="Aktuell" data-en="News">Aktuell</span>
+      <h2 class="section-title" data-de="Woran wir aktuell arbeiten" data-en="What we are currently working on">Woran wir aktuell arbeiten</h2>
+
+      <div class="grid-3">
+        <a href="Projekte/projekt-biocampus-straubing.html" class="project-card" data-category="Büro & Industrie" data-name="biocampus straubing">
+          <img src="media/portfolio/00 Straubing/cover.jpg" alt="BioCampus MultiPilot — Straubing" class="project-card__img" loading="lazy" width="600" height="375">
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Büro &amp; Industrie" data-en="Office &amp; Industry">Büro &amp; Industrie</span>
+            <h3 class="project-card__title" data-de="BioCampus MultiPilot — Straubing" data-en="BioCampus MultiPilot — Straubing">BioCampus MultiPilot — Straubing</h3>
+            <p class="project-card__meta" data-de="Hafen Straubing-Sand, Bayern" data-en="Port of Straubing-Sand, Bavaria">Hafen Straubing-Sand, Bayern</p>
+          </div>
+        </a>
+
+        <a href="Projekte/projekt-abensberger-mainburg.html" class="project-card" data-category="Architektur" data-name="abensberger mainburg">
+          <img src="media/portfolio/01 Mainburg/Cover.png" alt="Abensberger Straße — Mainburg" class="project-card__img" loading="lazy" width="600" height="375">
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Architektur" data-en="Architecture">Architektur</span>
+            <h3 class="project-card__title" data-de="Abensberger Straße — Mainburg" data-en="Abensberger Strasse — Mainburg">Abensberger Straße — Mainburg</h3>
+            <p class="project-card__meta" data-de="Mainburg, Bayern" data-en="Mainburg, Bavaria">Mainburg, Bayern</p>
+          </div>
+        </a>
+
+        <a href="Projekte/projekt-laser-scan-bim.html" class="project-card" data-category="Digitale Planung" data-name="laser scan bim">
+          <img src="media/Laser Scan/Laser Scan Cover.jpg" alt="3D Laser Scanning &amp; BIM Modelling" class="project-card__img" loading="lazy" width="600" height="375">
+          <div class="project-card__body">
+            <span class="project-card__tag" data-de="Digitale Planung" data-en="Digital Planning">Digitale Planung</span>
+            <h3 class="project-card__title" data-de="3D-Laserscanning &amp; BIM-Modellierung" data-en="3D Laser Scanning &amp; BIM Modelling">3D-Laserscanning &amp; BIM-Modellierung</h3>
+            <p class="project-card__meta" data-de="Bayern, Deutschland" data-en="Bavaria, Germany">Bayern, Deutschland</p>
+          </div>
+        </a>
+      </div>
+
+      <div style="margin-top: var(--space-l); text-align: center;">
+        <a href="projekte.html" class="cta" data-de="Alle Projekte ansehen" data-en="View all projects">
+          <span data-de="Alle Projekte ansehen" data-en="View all projects">Alle Projekte ansehen</span>
+          <span class="cta__arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- NACHHALTIGKEIT TEASER -->
+    <section class="section fade-in" id="nachhaltigkeit-teaser">
+      <span class="section-label" data-de="Nachhaltigkeit" data-en="Sustainability">Nachhaltigkeit</span>
+      <h2 class="section-title" data-de="Zukunftsfähig planen" data-en="Planning for the future">Zukunftsfähig planen</h2>
+
+      <div class="grid-2">
+        <div>
+          <img src="media/nachhaltigkeit-hero.png" alt="Nachhaltigkeit bei SPS-IBR" loading="lazy" style="width:100%; aspect-ratio:16/10; object-fit:cover;">
+          <div class="ref-strip" style="margin-top: var(--space-m);">
+            <span class="ref-strip__name">DGNB</span>
+            <span class="pipe" aria-hidden="true">|</span>
+            <span class="ref-strip__name">GEG</span>
+            <span class="pipe" aria-hidden="true">|</span>
+            <span class="ref-strip__name">EU-Taxonomie</span>
+            <span class="pipe" aria-hidden="true">|</span>
+            <span class="ref-strip__name">BIM</span>
+          </div>
+        </div>
+        <div>
+          <!-- Intro -->
+          <p data-de="Nachhaltigkeit ist kein Add-on. Sie ist die Systemlogik, nach der wir Gebäude entwickeln." data-en="Sustainability is not an add-on. It is the system logic by which we develop buildings."><strong>Nachhaltigkeit ist kein Add-on.<br>Sie ist die Systemlogik, nach der wir Gebäude entwickeln.</strong></p>
+          <p style="margin-top: var(--space-s);" data-de="Wir verstehen Gebäude als integrierte Systeme aus Energie, Struktur und Nutzung — und entwickeln Lösungen, die langfristig funktionieren: technisch, ökologisch und wirtschaftlich." data-en="We understand buildings as integrated systems of energy, structure and use — and develop solutions that work long-term: technically, ecologically and economically.">Wir verstehen Gebäude als integrierte Systeme aus Energie, Struktur und Nutzung — und entwickeln Lösungen, die langfristig funktionieren: technisch, ökologisch und wirtschaftlich.</p>
+
+          <!-- 3 content blocks -->
+          <h3 style="margin: var(--space-m) 0 var(--space-s);" data-de="Was wir konkret entwickeln" data-en="What we concretely develop">Was wir konkret entwickeln</h3>
+
+          <div class="nachh-teaser-blocks">
+            <div class="nachh-teaser-block">
+              <span class="nachh-teaser-block__title" data-de="Energie-Systeme" data-en="Energy Systems">Energie-Systeme</span>
+              <p data-de="Langzeitspeicher, hybride Energiestrategien und Infrastrukturen für maximale Autarkie." data-en="Long-term storage, hybrid energy strategies and infrastructures for maximum self-sufficiency.">Langzeitspeicher, hybride Energiestrategien und Infrastrukturen für maximale Autarkie.</p>
+            </div>
+            <div class="nachh-teaser-block">
+              <span class="nachh-teaser-block__title" data-de="Material &amp; Konstruktion" data-en="Material &amp; Construction">Material &amp; Konstruktion</span>
+              <p data-de="CO₂-reduzierte und CO₂-negative Bauweisen — von Holz-Hybrid bis zu innovativen Fassadensystemen." data-en="CO₂-reduced and CO₂-negative construction — from wood hybrid to innovative facade systems.">CO₂-reduzierte und CO₂-negative Bauweisen — von Holz-Hybrid bis zu innovativen Fassadensystemen.</p>
+            </div>
+            <div class="nachh-teaser-block">
+              <span class="nachh-teaser-block__title" data-de="Digitale Planung" data-en="Digital Planning">Digitale Planung</span>
+              <p data-de="3D-Laserscanning und BIM als präzise Grundlage für sichere und effiziente Umsetzung." data-en="3D laser scanning and BIM as a precise basis for safe and efficient implementation.">3D-Laserscanning und BIM als präzise Grundlage für sichere und effiziente Umsetzung.</p>
+            </div>
+          </div>
+
+          <!-- Reference project -->
+          <div class="nachh-teaser-ref" style="margin-top: var(--space-m);">
+            <span class="section-label" style="font-size:0.65rem;" data-de="Aktuelles Projekt" data-en="Current Project">Aktuelles Projekt</span>
+            <p style="margin-top: var(--space-xs);"><strong>BioCampus MultiPilot, Straubing</strong></p>
+            <p style="color: var(--text-muted); font-size:0.875rem;" data-de="Leuchtturmprojekt (90 Mio. €) mit Fokus auf Holz-Stahl-Beton Hybridbau, CO₂-negative Materialien und EU-Taxonomie-Konformität." data-en="Lighthouse project (€90M) focusing on wood-steel-concrete hybrid construction, CO₂-negative materials and EU Taxonomy compliance.">Leuchtturmprojekt (90 Mio. €) mit Fokus auf Holz-Stahl-Beton Hybridbau, CO₂-negative Materialien und EU-Taxonomie-Konformität.</p>
+          </div>
+
+          <div style="margin-top: var(--space-m);">
+            <a href="nachhaltigkeit.html" class="cta">
+              <span data-de="Mehr zu unserer Nachhaltigkeitsstrategie" data-en="More on our sustainability strategy">Mehr zu unserer Nachhaltigkeitsstrategie</span>
+              <span class="cta__arrow" aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section class="section fade-in" id="kontakt" style="background: var(--surface);">
+      <h2 class="section-title" data-de="Sprechen wir miteinander" data-en="Let's talk">Sprechen wir miteinander</h2>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-info__item">
+            <div class="contact-info__label" data-de="Adresse" data-en="Address">Adresse</div>
+            <div class="contact-info__value">
+              Brienner Strasse 46<br>
+              80333 München, Deutschland<br>
+              <a href="https://maps.google.com/?q=Brienner+Strasse+46+80333+München" target="_blank" rel="noopener noreferrer" data-de="Auf Google Maps anzeigen →" data-en="View on Google Maps →">Auf Google Maps anzeigen →</a>
+            </div>
+          </div>
+
+          <div class="contact-info__item">
+            <div class="contact-info__label" data-de="Telefon" data-en="Phone">Telefon</div>
+            <div class="contact-info__value">
+              <a href="tel:+4989547265910">+49 89 5472659 10</a>
+            </div>
+          </div>
+
+          <div class="contact-info__item">
+            <div class="contact-info__label">E-Mail</div>
+            <div class="contact-info__value">
+              <a href="mailto:info@spacial-solutions.com">info@spacial-solutions.com</a>
+            </div>
+          </div>
+
+          <div class="contact-info__item">
+            <div class="contact-info__label">Web</div>
+            <div class="contact-info__value">
+              <a href="https://www.sps-ibr.com">www.sps-ibr.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="media/logo-sps-ibr.jpg" alt="SPS-IBR" height="30">
+        <p class="footer-brand__tagline" data-de="Vision trifft System" data-en="Vision meets System">Vision trifft System</p>
+        <div class="footer-brand__logos">
+          <a href="https://www.spacial-solutions.com" target="_blank" rel="noopener noreferrer" aria-label="Spacial Solutions">
+            <img src="media/logo-spacial-solutions.jpg" alt="Spacial Solutions" height="24">
+          </a>
+          <a href="https://www.ibrauscher.de" target="_blank" rel="noopener noreferrer" aria-label="Ingenieurbüro Rauscher">
+            <img src="media/logo-ibrauscher.jpg" alt="Ingenieurbüro Rauscher" height="24">
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <div class="footer-nav__title" data-de="Navigation" data-en="Navigation">Navigation</div>
+        <ul class="footer-nav__list">
+          <li><a href="buero.html" class="footer-nav__link" data-de="Büro" data-en="Office">Büro</a></li>
+          <li><a href="projekte.html" class="footer-nav__link" data-de="Projekte" data-en="Projects">Projekte</a></li>
+          <li><a href="index.html#nachhaltigkeit-teaser" class="footer-nav__link" data-de="Nachhaltigkeit" data-en="Sustainability">Nachhaltigkeit</a></li>
+          <li><a href="index.html#kontakt" class="footer-nav__link" data-de="Kontakt" data-en="Contact">Kontakt</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <div class="footer-contact__title" data-de="Kontakt" data-en="Contact">Kontakt</div>
+        <address>
+          <p class="footer-contact__line">Brienner Strasse 46</p>
+          <p class="footer-contact__line">80333 München</p>
+          <p class="footer-contact__line"><a href="tel:+4989547265910">+49 89 5472659 10</a></p>
+          <p class="footer-contact__line"><a href="mailto:info@spacial-solutions.com">info@spacial-solutions.com</a></p>
+        </address>
+      </div>
+    </div>
+
+    <div class="footer-legal">
+      <span>© <span class="footer-year">2026</span> SPS-IBR</span>
+      <span class="pipe" aria-hidden="true">|</span>
+      <a href="impressum.html" data-de="Impressum" data-en="Legal Notice">Impressum</a>
+      <span class="pipe" aria-hidden="true">|</span>
+      <a href="datenschutz.html" data-de="Datenschutz" data-en="Privacy Policy">Datenschutz</a>
+    </div>
+  </footer>
+
+  <script src="js/lang.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- HTML-lang override for elements with inline markup (e.g. green letters) -->
+  <script>
+  (function () {
+    function applyHtmlLang(lang) {
+      document.querySelectorAll('[data-de-html][data-en-html]').forEach(function (el) {
+        var val = el.getAttribute('data-' + lang + '-html');
+        if (val) el.innerHTML = val;
+      });
+    }
+    var stored = (function(){ try { return localStorage.getItem('sps-lang'); } catch(e){ return null; } })();
+    applyHtmlLang(stored || 'de');
+    document.querySelectorAll('.lang-toggle__btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        applyHtmlLang(btn.getAttribute('data-lang'));
+      });
+    });
+  })();
+  </script>
+</body>
+</html>

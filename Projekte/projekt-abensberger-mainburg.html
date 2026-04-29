@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abensberger Straße — Mainburg — SPS-IBR</title>
+  <meta name="description" content="Abensberger Straße — Mainburg — SPS-IBR Projekt.">
+  <meta property="og:title" content="Abensberger Straße — Mainburg — SPS-IBR">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://www.sps-ibr.com/Projekte/projekt-abensberger-mainburg.html">
+  <link rel="icon" href="../favicon.ico">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    /* Project Detail Page Layout */
+    .projekt-detail-layout {
+      display: grid;
+      grid-template-columns: 65fr 35fr;
+      gap: 0;
+      min-height: 100vh;
+      align-items: start;
+    }
+    .projekt-detail-gallery {
+      position: sticky;
+      top: 70px;
+    }
+    .projekt-detail-gallery .main-img {
+      width: 100%;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      display: block;
+      cursor: pointer;
+    }
+    .projekt-thumbnails {
+      display: flex;
+      gap: 6px;
+      padding: 8px;
+      background: #111;
+      overflow-x: auto;
+      scrollbar-width: thin;
+    }
+    .projekt-thumbnails img {
+      width: 70px;
+      height: 50px;
+      object-fit: cover;
+      cursor: pointer;
+      opacity: 0.6;
+      transition: opacity 0.2s;
+      border: 2px solid transparent;
+      flex-shrink: 0;
+    }
+    .projekt-thumbnails img.active,
+    .projekt-thumbnails img:hover {
+      opacity: 1;
+      border-color: #fff;
+    }
+    .slider-controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 16px;
+      background: rgba(0,0,0,0.85);
+    }
+    .slider-btn {
+      background: none;
+      border: 1px solid rgba(255,255,255,0.3);
+      color: #fff;
+      padding: 6px 16px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: border-color 0.2s;
+    }
+    .slider-btn:hover { border-color: #fff; }
+    .slider-counter {
+      color: rgba(255,255,255,0.6);
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+    }
+    .projekt-detail-info {
+      padding: 48px 40px;
+      position: sticky;
+      top: 70px;
+      max-height: calc(100vh - 70px);
+      overflow-y: auto;
+    }
+    .projekt-detail-tag {
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+    .projekt-detail-title {
+      font-size: clamp(1.4rem, 2.5vw, 2rem);
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 6px;
+    }
+    .projekt-detail-subtitle {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 32px;
+      line-height: 1.5;
+    }
+    .projekt-detail-desc {
+      font-size: 0.9rem;
+      line-height: 1.8;
+      color: var(--text-muted);
+      margin-bottom: 32px;
+    }
+    .projekt-detail-desc p + p { margin-top: 14px; }
+    .projekt-facts {
+      border-top: 1px solid var(--border);
+      padding-top: 24px;
+      margin-bottom: 32px;
+    }
+    .projekt-fact {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 8px;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.85rem;
+    }
+    .projekt-fact__label {
+      color: var(--text-muted);
+      text-transform: uppercase;
+      font-size: 0.7rem;
+      letter-spacing: 0.08em;
+      padding-top: 2px;
+    }
+    .projekt-fact__value {
+      color: var(--text);
+      font-weight: 500;
+    }
+    .projekt-detail-back {
+      margin-top: 24px;
+    }
+    /* Weitere Projekte */
+    .weitere-projekte {
+      padding: 64px 48px;
+      background: var(--surface);
+    }
+    .weitere-projekte h2 {
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 32px;
+      color: var(--text-muted);
+    }
+    .weitere-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    @media (max-width: 900px) {
+      .projekt-detail-layout {
+        grid-template-columns: 1fr;
+      }
+      .projekt-detail-gallery {
+        position: relative;
+        top: 0;
+      }
+      .projekt-detail-info {
+        position: relative;
+        top: 0;
+        max-height: none;
+        padding: 32px 24px;
+      }
+      .weitere-grid {
+        grid-template-columns: 1fr;
+      }
+      .weitere-projekte {
+        padding: 40px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link" data-de="Zum Inhalt springen" data-en="Skip to content">Zum Inhalt springen</a>
+
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <div class="header-logo">
+      <a href="../index.html" aria-label="SPS-IBR — Zur Startseite">
+        <img src="../media/logo-sps-ibr.jpg" alt="SPS-IBR Logo" width="140" height="36">
+      </a>
+    </div>
+        <nav class="main-nav" aria-label="Hauptnavigation">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="../buero.html" class="main-nav__link" data-de="Büro" data-en="Office">Büro</a></li>
+        <li class="main-nav__item"><span class="pipe" aria-hidden="true">|</span></li>
+        <li class="main-nav__item"><a href="../index.html#aktuell" class="main-nav__link" data-de="Aktuell" data-en="News">Aktuell</a></li>
+        <li class="main-nav__item"><span class="pipe" aria-hidden="true">|</span></li>
+        <li class="main-nav__item"><a href="../nachhaltigkeit.html" class="main-nav__link" data-de="Nachhaltigkeit" data-en="Sustainability">Nachhaltigkeit</a></li>
+        <li class="main-nav__item"><span class="pipe" aria-hidden="true">|</span></li>
+        <li class="main-nav__item"><a href="../projekte.html" class="main-nav__link" data-de="Projekte" data-en="Projects">Projekte</a></li>
+        <li class="main-nav__item"><span class="pipe" aria-hidden="true">|</span></li>
+        <li class="main-nav__item"><a href="../index.html#kontakt" class="main-nav__link" data-de="Kontakt" data-en="Contact">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div class="lang-toggle desktop-only">
+      <button class="lang-toggle__btn" data-lang="de" aria-pressed="true">DE</button>
+      <span class="lang-toggle__sep">/</span>
+      <button class="lang-toggle__btn" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <button class="hamburger" aria-expanded="false" aria-controls="mobile-nav" aria-label="Menü öffnen">
+      <span class="hamburger__line"></span>
+      <span class="hamburger__line"></span>
+      <span class="hamburger__line"></span>
+    </button>
+  </header>
+
+    <div class="mobile-nav" id="mobile-nav" role="dialog" aria-modal="true" aria-label="Navigation">
+    <a href="../buero.html" class="mobile-nav__link" data-de="Büro" data-en="Office">Büro</a>
+    <a href="../index.html#aktuell" class="mobile-nav__link" data-de="Aktuell" data-en="News">Aktuell</a>
+    <a href="../nachhaltigkeit.html" class="mobile-nav__link" data-de="Nachhaltigkeit" data-en="Sustainability">Nachhaltigkeit</a>
+    <a href="../projekte.html" class="mobile-nav__link" data-de="Projekte" data-en="Projects">Projekte</a>
+    <a href="../index.html#kontakt" class="mobile-nav__link" data-de="Kontakt" data-en="Contact">Kontakt</a>
+    <div class="lang-toggle">
+      <button class="lang-toggle__btn" data-lang="de" aria-pressed="true">DE</button>
+      <span class="lang-toggle__sep">/</span>
+      <button class="lang-toggle__btn" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- TWO-COLUMN PROJECT DETAIL -->
+    <section class="projekt-detail-layout">
+
+      <!-- LEFT: IMAGE GALLERY -->
+      <div class="projekt-detail-gallery">
+        <img id="main-project-img" class="main-img" src="../media/portfolio/01 Mainburg/Cover.png" alt="Abensberger Straße — Mainburg" loading="eager">
+        <div class="slider-controls">
+          <button class="slider-btn" id="prev-img" aria-label="Vorheriges Bild">←</button>
+          <span class="slider-counter" id="img-counter">1 / 5</span>
+          <button class="slider-btn" id="next-img" aria-label="Nächstes Bild">→</button>
+        </div>
+        <div class="projekt-thumbnails" id="thumbnails">
+          <img src="../media/portfolio/01 Mainburg/Cover.png" alt="Bild 1" class="active">
+          <img src="../media/portfolio/01 Mainburg/Abensberger 01.png" alt="Bild 2">
+          <img src="../media/portfolio/01 Mainburg/Abensberger 02.png" alt="Bild 3">
+          <img src="../media/portfolio/01 Mainburg/Abensberger 04.jpg" alt="Bild 4">
+          <img src="../media/portfolio/01 Mainburg/Abensberger 05.jpg" alt="Bild 5">
+        </div>
+      </div>
+
+      <!-- RIGHT: PROJECT INFO -->
+      <div class="projekt-detail-info">
+        <div class="projekt-detail-tag" data-de="Architektur" data-en="Architecture">Architektur</div>
+        <h1 class="projekt-detail-title">Abensberger Straße — Mainburg</h1>
+        <p class="projekt-detail-subtitle" data-de="Mischnutzung mit Bestandsintegration und zukunftsorientiertem Energiekonzept" data-en="Mixed-use with heritage integration and future-oriented energy concept">Mischnutzung mit Bestandsintegration und zukunftsorientiertem Energiekonzept</p>
+
+        <div class="projekt-detail-desc">
+          <p data-de="Das Projekt Abensberger Straße transformiert ein bestehendes Grundstück in Mainburg zu einem zukunftsfähigen Mischnutzungskonzept mit Gewerbe, Büro, Wohnen und Gastronomie. Zentrales Element ist die Integration des historischen Ziegelgebäudes ('Haus Andreas'), das als gastronomischer Anker neu interpretiert wird." data-en="The Abensberger Straße project transforms an existing site in Mainburg into a forward-looking mixed-use concept comprising retail, office, residential and dining. A central element is the integration of the historic brick building ('Haus Andreas'), reinterpreted as a gastronomic anchor.">Das Projekt Abensberger Straße transformiert ein bestehendes Grundstück in Mainburg zu einem zukunftsfähigen Mischnutzungskonzept mit Gewerbe, Büro, Wohnen und Gastronomie. Zentrales Element ist die Integration des historischen Ziegelgebäudes („Haus Andreas"), das als gastronomischer Anker neu interpretiert wird.</p>
+          <p data-de="Die Neubauvolumen umschließen den Bestand und schaffen eine klare architektonische Verbindung zwischen Alt und Neu. Im Erdgeschoss entstehen Gewerbe- und Ausstellungsflächen, während die Obergeschosse flexible Büroflächen und kompakte Wohneinheiten aufnehmen. Im Dachbereich ist ein Wellness- und Rückzugsbereich vorgesehen." data-en="The new building volumes enclose the existing structure and create a clear architectural connection between old and new. The ground floor accommodates retail and exhibition spaces, while the upper floors house flexible offices and compact residential units. A wellness and retreat area is planned at roof level.">Die Neubauvolumen umschließen den Bestand und schaffen eine klare architektonische Verbindung zwischen Alt und Neu. Im Erdgeschoss entstehen Gewerbe- und Ausstellungsflächen, während die Obergeschosse flexible Büroflächen und kompakte Wohneinheiten aufnehmen. Im Dachbereich ist ein Wellness- und Rückzugsbereich vorgesehen.</p>
+          <p data-de="Das Projekt verfolgt eine konsequent nachhaltige Strategie: Photovoltaik auf Dach- und Fassadenflächen, innovative Energiesysteme wie thermische Langzeitspeicher sowie optimierte Geometrie für maximale Energieeffizienz." data-en="The project follows a consistently sustainable strategy: photovoltaics on roof and façade surfaces, innovative energy systems such as thermal long-term storage, and optimised geometry for maximum energy efficiency.">Das Projekt verfolgt eine konsequent nachhaltige Strategie: Photovoltaik auf Dach- und Fassadenflächen, innovative Energiesysteme wie thermische Langzeitspeicher sowie optimierte Geometrie für maximale Energieeffizienz.</p>
+        </div>
+
+        <div class="projekt-facts">
+          <div class="projekt-fact">
+            <div class="projekt-fact__label" data-de="Standort" data-en="Location">Standort</div>
+            <div class="projekt-fact__value" data-de="Mainburg, Bayern" data-en="Mainburg, Bavaria">Mainburg, Bayern</div>
+          </div>
+          <div class="projekt-fact">
+            <div class="projekt-fact__label" data-de="Auftraggeber" data-en="Client">Auftraggeber</div>
+            <div class="projekt-fact__value" data-de="Privat" data-en="Private">Privat</div>
+          </div>
+          <div class="projekt-fact">
+            <div class="projekt-fact__label" data-de="Status" data-en="Status">Status</div>
+            <div class="projekt-fact__value" data-de="Leistungsphase 2 — Konzeptplanung" data-en="Design Phase 2 — Concept Planning">Leistungsphase 2 — Konzeptplanung</div>
+          </div>
+          <div class="projekt-fact">
+            <div class="projekt-fact__label" data-de="Leistungen" data-en="Services">Leistungen</div>
+            <div class="projekt-fact__value" data-de="Architektur, BIM-Koordination, Konzeptentwicklung" data-en="Architecture, BIM Coordination, Concept Development">Architektur, BIM-Koordination, Konzeptentwicklung</div>
+          </div>
+        </div>
+
+        <div class="projekt-detail-back">
+          <a href="../projekte.html" class="cta">
+            <span data-de="← Alle Projekte" data-en="← All Projects">← Alle Projekte</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WEITERE PROJEKTE -->
+    <section class="weitere-projekte">
+      <h2 data-de="Weitere Projekte" data-en="Further Projects">Weitere Projekte</h2>
+      <div class="weitere-grid">
+        <a href="projekt-biocampus-straubing.html" class="project-card">
+          <img src="../media/portfolio/00 Straubing/cover.jpg" alt="BioCampus MultiPilot — Straubing">
+          <div class="project-card__meta">
+            <span class="project-card__category">Büro & Industrie</span>
+            <h3>BioCampus MultiPilot — Straubing</h3>
+          </div>
+        </a>
+        <a href="projekt-laser-scan-bim.html" class="project-card">
+          <img src="../media/Laser Scan/Laser Scan Cover.jpg" alt="3D-Laserscanning & BIM-Modellierung">
+          <div class="project-card__meta">
+            <span class="project-card__category">Digitale Planung</span>
+            <h3>3D-Laserscanning & BIM-Modellierung</h3>
+          </div>
+        </a>
+        <a href="../projekte.html" class="project-card">
+          <img src="../media/portfolio/kigali-convention-complex/cover.jpg" alt="Kigali Convention Complex">
+          <div class="project-card__meta">
+            <span class="project-card__category">Architektur</span>
+            <h3>Kigali Convention Complex</h3>
+          </div>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="../media/logo-sps-ibr.jpg" alt="SPS-IBR" height="30">
+        <p class="footer-brand__tagline" data-de="Vision trifft System" data-en="Vision meets System">Vision trifft System</p>
+        <div class="footer-brand__logos">
+          <a href="https://www.spacial-solutions.com" target="_blank" rel="noopener noreferrer" aria-label="Spacial Solutions"><img src="../media/logo-spacial-solutions.jpg" alt="Spacial Solutions" height="24"></a>
+          <a href="https://www.ibrauscher.de" target="_blank" rel="noopener noreferrer" aria-label="Ingenieurbüro Rauscher"><img src="../media/logo-ibrauscher.jpg" alt="Ingenieurbüro Rauscher" height="24"></a>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <div class="footer-nav__title" data-de="Navigation" data-en="Navigation">Navigation</div>
+        <ul class="footer-nav__list">
+          <li><a href="../buero.html" class="footer-nav__link" data-de="Büro" data-en="Office">Büro</a></li>
+          <li><a href="../index.html#aktuell" class="footer-nav__link" data-de="Aktuell" data-en="News">Aktuell</a></li>
+          <li><a href="../nachhaltigkeit.html" class="footer-nav__link" data-de="Nachhaltigkeit" data-en="Sustainability">Nachhaltigkeit</a></li>
+          <li><a href="../projekte.html" class="footer-nav__link" data-de="Projekte" data-en="Projects">Projekte</a></li>
+          <li><a href="../index.html#kontakt" class="footer-nav__link" data-de="Kontakt" data-en="Contact">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <div class="footer-contact__title" data-de="Kontakt" data-en="Contact">Kontakt</div>
+        <address>
+          <p class="footer-contact__line">Brienner Strasse 46</p>
+          <p class="footer-contact__line">80333 München</p>
+          <p class="footer-contact__line"><a href="tel:+4989547265910">+49 89 5472659 10</a></p>
+          <p class="footer-contact__line"><a href="mailto:info@spacial-solutions.com">info@spacial-solutions.com</a></p>
+        </address>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <span>© <span class="footer-year">2026</span> SPS-IBR</span>
+      <span class="pipe" aria-hidden="true">|</span>
+      <a href="../impressum.html" data-de="Impressum" data-en="Legal Notice">Impressum</a>
+      <span class="pipe" aria-hidden="true">|</span>
+      <a href="../datenschutz.html" data-de="Datenschutz" data-en="Privacy Policy">Datenschutz</a>
+    </div>
+  </footer>
+
+  <script src="../js/lang.js"></script>
+  <script src="../js/main.js"></script>
+  <script>
+    // Image slider for project detail page
+    (function() {
+      const images = ["../media/portfolio/01 Mainburg/Cover.png", "../media/portfolio/01 Mainburg/Abensberger 01.png", "../media/portfolio/01 Mainburg/Abensberger 02.png", "../media/portfolio/01 Mainburg/Abensberger 04.jpg", "../media/portfolio/01 Mainburg/Abensberger 05.jpg"];
+      let current = 0;
+      const mainImg = document.getElementById('main-project-img');
+      const counter = document.getElementById('img-counter');
+      const thumbs = document.querySelectorAll('#thumbnails img');
+
+      function showImage(idx) {
+        current = (idx + images.length) % images.length;
+        mainImg.src = images[current];
+        mainImg.alt = document.querySelector('.projekt-detail-title').textContent + ' — Bild ' + (current + 1);
+        counter.textContent = (current + 1) + ' / ' + images.length;
+        thumbs.forEach((t, i) => t.classList.toggle('active', i === current));
+      }
+
+      document.getElementById('prev-img').addEventListener('click', () => showImage(current - 1));
+      document.getElementById('next-img').addEventListener('click', () => showImage(current + 1));
+      thumbs.forEach((t, i) => t.addEventListener('click', () => showImage(i)));
+
+      // Auto-slide every 6 seconds
+      setInterval(() => showImage(current + 1), 6000);
+
+      showImage(0);
+    })();
+  </script>
+</body>
+</html>
