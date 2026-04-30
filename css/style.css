@@ -1932,6 +1932,20 @@ a:focus-visible {
   color: var(--text-muted);
 }
 
+.ueber-uns-text-block {
+  font-size: 0.9rem;
+  line-height: 1.75;
+  color: var(--text-muted);
+}
+
+.ueber-uns-text-block p {
+  margin: 0 0 var(--space-s) 0;
+}
+
+.ueber-uns-text-block p:last-child {
+  margin-bottom: 0;
+}
+
 /* CTA — tight after body text */
 .ueber-uns-cta {
   margin-top: var(--space-m);

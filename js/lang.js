@@ -34,6 +34,12 @@
       el.textContent = el.getAttribute('data-' + lang);
     });
 
+    /* Update HTML-rich translatable blocks (use innerHTML) */
+    var htmlEls = document.querySelectorAll('[data-de-html][data-en-html]');
+    htmlEls.forEach(function (el) {
+      el.innerHTML = el.getAttribute('data-' + lang + '-html');
+    });
+
     /* Update placeholders */
     var placeholders = document.querySelectorAll('[data-placeholder-de][data-placeholder-en]');
     placeholders.forEach(function (el) {
